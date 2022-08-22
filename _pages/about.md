@@ -4,8 +4,10 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Blog by me obviously. Built with fastpages**[fastpages](https://github.com/fastai/fastpages)** [^1].
 
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+My name is Orlando Carcamo! Here is some info about me!
+- I like dogs, please pet your dogs
+- I like tea... sweet tea... Arizona tea
+- I play videogames on Xbox (superior console)
+- Fight me
