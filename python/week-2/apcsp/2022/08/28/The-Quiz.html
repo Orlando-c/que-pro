@@ -146,7 +146,10 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome to my quiz on Star Wars! Test your knowledge to see if you are a true Star Wars nerd! So everything runs smoothly, please answer in all lowercase. Thanks and have fun!"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tokenize</span> <span class="kn">import</span> <span class="n">Ignore</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome to my quiz on Star Wars! Test your knowledge to see if you are a true Star Wars nerd! So everything runs smoothly, please answer in all lowercase. Thanks and have fun!"</span><span class="p">)</span>
 
 <span class="c1">#Define lists of questions, answers and point values</span>
 
@@ -172,7 +175,13 @@ window.onload = wrap_img;
     
     <span class="n">level</span><span class="o">+=</span><span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"The Empire wants YOU to join! You recieved a total of "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">Midichlorian</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" Midi-Chlorian out of 27000 possible Midi-Chlorian"</span>  <span class="p">)</span> 
+    <span class="k">if</span><span class="p">(</span><span class="n">level</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">Midichlorian</span><span class="o">&gt;</span><span class="mi">17000</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"The Empire wants YOU to join! You recieved a total of "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">Midichlorian</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" Midi-Chlorian out of 27000 possible Midi-Chlorian"</span><span class="p">)</span> 
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You've been Jedi mind-tricked! You recieved a total of "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">Midichlorian</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" Midi-chlorian out of 27000 possible Midi-Chlorian"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="n">Ignore</span>
 </pre></div>
 
     </div>
