@@ -72,6 +72,14 @@
   
 
   
+      ,"page7": {
+          "title": "Vocab",
+          "content": "Vocabulary .",
+          "url": "https://orlando-c.github.io/que-pro/vocab/",
+          "relUrl": "/vocab/",
+          "date": ""
+      }
+      
   
 
   
@@ -81,7 +89,10 @@
   
 
   
-      ,"page10": {
+  
+
+  
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://orlando-c.github.io/que-pro/robots.txt",
