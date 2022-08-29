@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-Blog by me obviously. Built with fastpages**[fastpages](https://github.com/fastai/fastpages)** [^1].
+Blog by me obviously. 
 
 My name is Orlando Carcamo! Here is some info about me!
 - I like dogs, please pet your dogs
