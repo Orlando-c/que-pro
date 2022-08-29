@@ -154,25 +154,25 @@ window.onload = wrap_img;
     <span class="s2">"Level 0: Who is Luke Skywalker's father?"</span><span class="p">,</span> <span class="s2">"Level 1: What trilogy is the Death Star primarily in?"</span><span class="p">,</span> <span class="s2">"Level 2: What is Finn's stormtrooper code name?"</span><span class="p">,</span> <span class="s2">"Level 3: Where did Anakin and Obiwan duel Darth Maul?"</span><span class="p">,</span> <span class="s2">"Level 4: What is Anakin's midi-chlorian count (aproximately)?"</span><span class="p">,</span> <span class="s2">"Level 5: Of what species is Yoda?"</span><span class="p">]</span>
 <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">"anakin skywalker"</span><span class="p">,</span> <span class="s2">"original trilogy"</span><span class="p">,</span> <span class="s2">"fn-2187"</span><span class="p">,</span> <span class="s2">"naboo"</span><span class="p">,</span> <span class="s2">"27000"</span><span class="p">,</span> <span class="s2">"unknown"</span><span class="p">]</span>
-<span class="n">pointValues</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+<span class="n">MidichlorianValues</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">750</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">4000</span><span class="p">,</span> <span class="mi">8000</span><span class="p">,</span> <span class="mi">12000</span><span class="p">]</span>
 
 <span class="c1">#Variables</span>
 <span class="n">level</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">points</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">Midichlorian</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="k">for</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"For "</span><span class="p">,</span> <span class="n">pointValues</span><span class="p">[</span><span class="n">level</span><span class="p">],</span> <span class="s2">" points(s): "</span> <span class="o">+</span> <span class="n">question</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"For "</span><span class="p">,</span> <span class="n">MidichlorianValues</span><span class="p">[</span><span class="n">level</span><span class="p">],</span> <span class="s2">" Midi-Chlorian: "</span> <span class="o">+</span> <span class="n">question</span><span class="p">)</span>
     <span class="n">guess</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 
     <span class="k">if</span><span class="p">(</span><span class="n">guess</span> <span class="o">==</span> <span class="n">answers</span><span class="p">[</span><span class="n">level</span><span class="p">]):</span>
-        <span class="n">points</span><span class="o">+=</span><span class="n">pointValues</span><span class="p">[</span><span class="n">level</span><span class="p">]</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"You got it! You answered "</span> <span class="o">+</span> <span class="n">guess</span> <span class="o">+</span><span class="s2">" for "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pointValues</span><span class="p">[</span><span class="n">level</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" point(s), Your point total is "</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" point(s)"</span><span class="p">)</span>
+        <span class="n">Midichlorian</span><span class="o">+=</span><span class="n">MidichlorianValues</span><span class="p">[</span><span class="n">level</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You got it! You answered "</span> <span class="o">+</span> <span class="n">guess</span> <span class="o">+</span><span class="s2">" for "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">MidichlorianValues</span><span class="p">[</span><span class="n">level</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" Midi-Chlorian, Your Midi-Chlorian total is "</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">Midichlorian</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" Midi-Chlorian "</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Wrong! I find your lack of faith disturbing. You answered "</span> <span class="o">+</span> <span class="n">guess</span> <span class="o">+</span><span class="s2">" for "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pointValues</span><span class="p">[</span><span class="n">level</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" point(s), The correct response was "</span> <span class="o">+</span> <span class="n">answers</span><span class="p">[</span><span class="n">level</span><span class="p">]</span><span class="o">+</span> <span class="s2">" You currently have "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" point(s)"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Wrong! I find your lack of faith disturbing. You answered "</span> <span class="o">+</span> <span class="n">guess</span> <span class="o">+</span><span class="s2">" for "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">MidichlorianValues</span><span class="p">[</span><span class="n">level</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" Midi-Chlorian, The correct response was "</span> <span class="o">+</span> <span class="n">answers</span><span class="p">[</span><span class="n">level</span><span class="p">]</span><span class="o">+</span> <span class="s2">" You currently have "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Midichlorian</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" Midi-Chlorian"</span><span class="p">)</span>
     
     <span class="n">level</span><span class="o">+=</span><span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"The Empire wants YOU to join! You recieved a total of "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" point(s) out of 27 points"</span>  <span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The Empire wants YOU to join! You recieved a total of "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">Midichlorian</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" Midi-Chlorian out of 27000 possible Midi-Chlorian"</span>  <span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -186,19 +186,19 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Welcome to my quiz on Star Wars! Test your knowledge to see if you are a true Star Wars nerd! So everything runs smoothly, please answer in all lowercase. Thanks and have fun!
-For  0  points(s): Level 0: Who is Luke Skywalker's father?
-You got it! You answered anakin skywalker for 0 point(s), Your point total is 0 point(s)
-For  1  points(s): Level 1: What trilogy is the Death Star primarily in?
-Wrong! I find your lack of faith disturbing. You answered j] for 1 point(s), The correct response was original trilogy You currently have 0 point(s)
-For  2  points(s): Level 2: What is Finn's stormtrooper code name?
-You got it! You answered fn-2187 for 2 point(s), Your point total is 2 point(s)
-For  4  points(s): Level 3: Where did Anakin and Obiwan duel Darth Maul?
-You got it! You answered naboo for 4 point(s), Your point total is 6 point(s)
-For  8  points(s): Level 4: What is Anakin's midi-chlorian count (aproximately)?
-You got it! You answered 27000 for 8 point(s), Your point total is 14 point(s)
-For  12  points(s): Level 5: Of what species is Yoda?
-You got it! You answered unknown for 12 point(s), Your point total is 26 point(s)
-The Empire wants YOU to join! You recieved a total of 26 point(s) out of 27 points
+For  250  Midi-Chlorian: Level 0: Who is Luke Skywalker's father?
+You got it! You answered anakin skywalker for 250 Midi-Chlorian, Your Midi-Chlorian total is 250 Midi-Chlorian 
+For  750  Midi-Chlorian: Level 1: What trilogy is the Death Star primarily in?
+You got it! You answered original trilogy for 750 Midi-Chlorian, Your Midi-Chlorian total is 1000 Midi-Chlorian 
+For  2000  Midi-Chlorian: Level 2: What is Finn's stormtrooper code name?
+You got it! You answered fn-2187 for 2000 Midi-Chlorian, Your Midi-Chlorian total is 3000 Midi-Chlorian 
+For  4000  Midi-Chlorian: Level 3: Where did Anakin and Obiwan duel Darth Maul?
+You got it! You answered naboo for 4000 Midi-Chlorian, Your Midi-Chlorian total is 7000 Midi-Chlorian 
+For  8000  Midi-Chlorian: Level 4: What is Anakin's midi-chlorian count (aproximately)?
+You got it! You answered 27000 for 8000 Midi-Chlorian, Your Midi-Chlorian total is 15000 Midi-Chlorian 
+For  12000  Midi-Chlorian: Level 5: Of what species is Yoda?
+You got it! You answered unknown for 12000 Midi-Chlorian, Your Midi-Chlorian total is 27000 Midi-Chlorian 
+The Empire wants YOU to join! You recieved a total of 27000 Midi-Chlorian out of 27000 possible Midi-Chlorian
 </pre>
 </div>
 </div>
