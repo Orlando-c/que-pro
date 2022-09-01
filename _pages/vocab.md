@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Vocab
+title: _vocab
 permalink: /vocab/
 ---
 
-Vocabulary
+Different languages (primarily used)
+- Html
+- Python
+- Bash
