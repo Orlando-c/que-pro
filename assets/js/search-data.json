@@ -116,7 +116,7 @@
 
   
       ,"page1": {
-          "title": "About Me",
+          "title": "_about_me",
           "content": "Blog by me obviously. . My name is Orlando Carcamo! Here is some info about me! . I like dogs, please pet your dogs | I like tea… sweet tea… Arizona tea | I play videogames on Xbox (superior console) | Fight me | .",
           "url": "https://orlando-c.github.io/que-pro/about/",
           "relUrl": "/about/",
@@ -139,8 +139,8 @@
 
   
       ,"page7": {
-          "title": "Vocab",
-          "content": "Vocabulary .",
+          "title": "_vocab",
+          "content": "Different languages (primarily used) . Html | Python | Bash | .",
           "url": "https://orlando-c.github.io/que-pro/vocab/",
           "relUrl": "/vocab/",
           "date": ""
