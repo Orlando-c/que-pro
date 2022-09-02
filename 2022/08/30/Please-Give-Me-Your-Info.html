@@ -134,30 +134,17 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tokenize</span> <span class="kn">import</span> <span class="n">Ignore</span>
 
-
-<span class="n">InfoDB</span> <span class="o">=</span> <span class="p">[]</span>
-
 <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;What is your name (sample: Orlando Carcamo)&quot;</span><span class="p">,</span> <span class="s2">&quot;When were you born (sample: December 8th 2006)&quot;</span><span class="p">,</span> <span class="s2">&quot;Yes or No&quot;</span><span class="p">]</span>
+    <span class="s2">&quot;What is your favorite type of dog? (Please use capitals and accurate spelling - ex. Huskey) &quot;</span><span class="p">]</span>
 <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span>
 
-<span class="n">level</span> <span class="o">=</span> <span class="mi">0</span>
-    
-<span class="k">for</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">level</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Next question! &quot;</span> <span class="o">+</span> <span class="n">question</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;First question! &quot;</span> <span class="o">+</span> <span class="n">question</span><span class="p">)</span>
-    <span class="n">guess</span> <span class="o">=</span> <span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">questions</span><span class="p">)</span>
 
-    <span class="nb">print</span> <span class="p">(</span><span class="n">guess</span><span class="p">)</span>
+<span class="n">guess</span> <span class="o">=</span> <span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 
-    <span class="n">level</span><span class="o">+=</span><span class="mi">1</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">guess</span><span class="p">)</span>
 
-    <span class="k">if</span><span class="p">(</span><span class="n">level</span><span class="o">&gt;</span><span class="mi">2</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thank you for answering all the questions. They will be saved in a database for me to look over!&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">Ignore</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thank you for answering the question! Your response will be saved in a database for me to look over!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -170,13 +157,65 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>First question! What is your name (sample: Orlando Carcamo)
-huafh
-Next question! When were you born (sample: December 8th 2006)
-aihpfj
-Next question! Yes or No
-ufoah
-Thank you for answering all the questions. They will be saved in a database for me to look over!
+<pre>[&#39;What is your favorite type of dog? (Please use capitals and accurate spelling - ex. Huskey) &#39;]
+German Shepard
+Thank you for answering the question! Your response will be saved in a database for me to look over!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="p">(</span><span class="n">guess</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">&quot;Favorite Dog&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">guess</span><span class="p">)})</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{&#39;Favorite Dog&#39;: &#39;German Shepard&#39;}]
 </pre>
 </div>
 </div>
