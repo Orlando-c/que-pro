@@ -139,6 +139,17 @@
   
 
   
+      ,"page3": {
+          "title": "Schedule",
+          "content": "Week Activities Homework Tests Grading 4 | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;/td&gt; . 3 | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;/td&gt; . 2 | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;/td&gt; . 1 | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;a href=&quot;/que-pro&lt;/a&gt; | &lt;/td&gt; . &lt;/table&gt; .",
+          "url": "https://orlando-c.github.io/que-pro/schedule",
+          "relUrl": "/schedule",
+          "date": ""
+      }
+      
+  
+
+  
   
 
   
@@ -149,7 +160,7 @@
   
 
   
-      ,"page7": {
+      ,"page8": {
           "title": "_vocab",
           "content": "Different languages (primarily used) . Html | Python | Bash | .",
           "url": "https://orlando-c.github.io/que-pro/vocab/",
@@ -169,7 +180,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://orlando-c.github.io/que-pro/robots.txt",
