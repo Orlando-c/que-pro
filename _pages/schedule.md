@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /schedule
-title: Schedule
+title: _schedule
 ---
 
 <table>
@@ -11,26 +11,6 @@ title: Schedule
      <th>Homework</th>
      <th>Tests</th>
      <th>Grading</th>
-
-   <tr>
-        <td>
-            4 
-        </td>
-        <td>
-            <a href="{{site.baseurl}}</a>
-        </td>
-        <td>
-            <a href="{{site.baseurl}}</a>
-        </td>
-        <td>
-            <a href="{{site.baseurl}}</a>
-        </td>
-        <td>
-            <a href="{{site.baseurl}}</a>
-        </td>
-        </td>
-    </tr>
-
 
    <tr>
         <td>
@@ -46,7 +26,7 @@ title: Schedule
             <a href="{{site.baseurl}}</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}/week-3</a>
         </td>
         </td>
     </tr>
@@ -66,7 +46,27 @@ title: Schedule
             <a href="{{site.baseurl}}</a>
         </td>
         <td>
+            <a href="{{site.baseurl}}/week-2</a>
+        </td>
+        </td>
+    </tr>
+
+
+   <tr>
+        <td>
+            1
+        </td>
+        <td>
             <a href="{{site.baseurl}}</a>
+        </td>
+        <td>
+            <a href="{{site.baseurl}}</a>
+        </td>
+        <td>
+            <a href="{{site.baseurl}}</a>
+        </td>
+        <td>
+            <a href="{{site.baseurl}}/week-1</a>
         </td>
         </td>
     </tr>
@@ -74,7 +74,7 @@ title: Schedule
 
     <tr>
         <td>
-            1 
+            0 
         </td>
         <td>
             <a href="{{site.baseurl}}</a>
@@ -86,7 +86,7 @@ title: Schedule
             <a href="{{site.baseurl}}</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}/week-0</a>
         </td>
         </td>
     </tr>
