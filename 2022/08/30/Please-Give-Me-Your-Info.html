@@ -187,6 +187,27 @@ Thank you for answering the question! Your response will be saved in a database 
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> name = (guess)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt;</span> print(&#34;dog&#34;, name, type(name))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> print()
+
+<span class="ansi-red-fg">NameError</span>: name &#39;guess&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -217,6 +238,67 @@ Thank you for answering the question! Your response will be saved in a database 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[{&#39;Favorite Dog&#39;: &#39;German Shepard&#39;}]
 </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Favorite Dog&quot;</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span> <span class="c1">#only if there are more than one answer</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">InfoDb</span><span class="p">:</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+
+<span class="n">for_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For loop output
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb Cell 5</span> in <span class="ansi-cyan-fg">&lt;cell line: 9&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     for record in InfoDb:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         print_data(record)
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> for_loop()
+
+<span class="ansi-green-intense-fg ansi-bold">/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb Cell 5</span> in <span class="ansi-cyan-fg">for_loop</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> def for_loop(): #only if there are more than one answer
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span>     print(&#34;For loop output\n&#34;)
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     for record in InfoDb:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/root/vscode/que-pro/_notebooks/2022-08-30-Please-Give-Me-Your-Info.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         print_data(record)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;InfoDb&#39; is not defined</pre>
 </div>
 </div>
 
