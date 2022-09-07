@@ -23,10 +23,10 @@ title: _schedule
             <a href="{{site.baseurl}}N/A</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}N/A</a>
+            <a href="{{site.baseurl}}/categories/week-3</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}/categories/week-3</a>
+            <a href="{{site.baseurl}}N/A</a>
         </td>
         </td>
     </tr>
@@ -43,10 +43,10 @@ title: _schedule
             <a href="{{site.baseurl}}/categories/APWH</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}/categories/week-2</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}/week-2</a>
+            <a href="{{site.baseurl}}</a>
         </td>
         </td>
     </tr>
@@ -63,10 +63,10 @@ title: _schedule
             <a href="{{site.baseurl}}</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}/categories/week-1</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}/week-1</a>
+            <a href="{{site.baseurl}}</a>
         </td>
         </td>
     </tr>
@@ -83,10 +83,10 @@ title: _schedule
             <a href="{{site.baseurl}}</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}/categories/week-0</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}/week-0</a>
+            <a href="{{site.baseurl}}</a>
         </td>
         </td>
     </tr>
