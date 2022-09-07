@@ -17,16 +17,16 @@ title: _schedule
             3
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}N/A</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}N/A</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}N/A</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}/week-3</a>
+            <a href="{{site.baseurl}}/categories/week-3</a>
         </td>
         </td>
     </tr>
@@ -40,7 +40,7 @@ title: _schedule
             <a href="{{site.baseurl}}</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{site.baseurl}}/categories/APWH</a>
         </td>
         <td>
             <a href="{{site.baseurl}}</a>
