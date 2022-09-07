@@ -40,13 +40,13 @@ title: _schedule
             <a href="{{site.baseurl}}</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}/categories/APWH</a>
+            <a href="{{https://orlando-c.github.io/que-pro/categories/#APWH}}/categories/APWH</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}/categories/week-2</a>
+            <a href="{{https://github.com/Orlando-c/que-pro/issues/3}}/categories/week-2</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{https://github.com/Orlando-c/que-pro/issues/3}}/Week 2 grading</a>
         </td>
         </td>
     </tr>
@@ -66,7 +66,7 @@ title: _schedule
             <a href="{{site.baseurl}}/categories/week-1</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}</a>
+            <a href="{{https://github.com/Orlando-c/que-pro/issues/2}}/Week 1 grading</a>
         </td>
         </td>
     </tr>
