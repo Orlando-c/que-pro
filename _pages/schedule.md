@@ -12,7 +12,7 @@ title: _schedule
      <th>Tests</th>
      <th>Grading</th>
 
-   <tr>
+   
         <td>
             3
         </td>
@@ -32,7 +32,7 @@ title: _schedule
     </tr>
 
 
-   <tr>
+   
         <td>
             2
         </td>
@@ -52,7 +52,7 @@ title: _schedule
     </tr>
 
 
-   <tr>
+   
         <td>
             1
         </td>
@@ -63,7 +63,7 @@ title: _schedule
             <a href="{{site.baseurl}}</a>
         </td>
         <td>
-            <a href="{{site.baseurl}}/categories/week-1</a>
+            <a href="{{https://github.com/Orlando-c/que-pro/issues/2}}/categories/week-1</a>
         </td>
         <td>
             <a href="{{https://github.com/Orlando-c/que-pro/issues/2}}/Week 1 grading</a>
@@ -72,7 +72,7 @@ title: _schedule
     </tr>
     
 
-    <tr>
+
         <td>
             0 
         </td>
