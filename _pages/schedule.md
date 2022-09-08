@@ -12,7 +12,7 @@ title: _schedule
      <th>Tests</th>
      <th>Grading</th>
 
-   
+   </td>
         <td>
             3
         </td>
@@ -32,7 +32,7 @@ title: _schedule
     </tr>
 
 
-   
+   </td>
         <td>
             2
         </td>
@@ -52,7 +52,7 @@ title: _schedule
     </tr>
 
 
-   
+   </td>
         <td>
             1
         </td>
@@ -72,7 +72,7 @@ title: _schedule
     </tr>
     
 
-
+    </td>
         <td>
             0 
         </td>
