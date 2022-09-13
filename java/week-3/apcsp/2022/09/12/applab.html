@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -206,6 +206,10 @@ window.onload = wrap_img;
 </tbody>
 </table>
 <ul>
+<li>The link to my quiz!</li>
+</ul>
+<p><a href="https://studio.code.org/projects/applab/MDegIT82dh0eA2n6yBtQmDvSUjdX1F7avg8yEbQ_sYs">Clash Royale App Lab Quiz</a></p>
+<ul>
 <li>Code is below</li>
 </ul>
 
@@ -317,6 +321,79 @@ window.onload = wrap_img;
 <span class="p">});</span>
 <span class="n">onEvent</span><span class="p">(</span><span class="s2">"goblinright"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
   <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attackrightgoblin"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextleftgiant"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attacksucessboth"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextleftgoblin"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attackleftdefeat"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextleftmusketeer"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attackleftdefeat"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextleftskarmy"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attackleftsuccess"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextleftsparky"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attacksucessboth"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"attackrightgiant"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attacksucessboth"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"attackrightgoblin"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attackrightdefeat"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"attackrighthogrider"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attackrightsuccess"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"attackrightmusketeer"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attackrightdefeat"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"attackrightwizard"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"attackrightsuccess"</span><span class="p">);</span>
+  <span class="n">crowns</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"returnhomeleft"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"homescreen"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"returnhomeright"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"homescreen"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextleftgiant"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"homescreen"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextwinscreen"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"winscreen"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextwinscreenright"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"winscreen"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextwinscreenleft"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"winscreen"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextwinscreen"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setText</span><span class="p">(</span><span class="s2">"crownlabel"</span><span class="p">,</span> <span class="n">crowns</span> <span class="o">+</span> <span class="s2">"crowns"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextwinscreenright"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setText</span><span class="p">(</span><span class="s2">"crownlabel"</span><span class="p">,</span> <span class="n">crowns</span> <span class="o">+</span> <span class="s2">"crowns"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"nextwinscreenleft"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setText</span><span class="p">(</span><span class="s2">"crownlabel"</span><span class="p">,</span> <span class="n">crowns</span> <span class="o">+</span> <span class="s2">"crowns"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"returnhomewin"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"fakehome"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"claimrealreward"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"golem"</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></div>
 
