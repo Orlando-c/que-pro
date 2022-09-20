@@ -11,3 +11,4 @@ My name is Orlando Carcamo! Here is some info about me!
 - I like tea... sweet tea... Arizona tea
 - I play videogames on Xbox (superior console)
 - Fight me
+- I like to use legos
