@@ -19,7 +19,7 @@ Trimester 1 APCSP
   </tr>
   <tr>
     <td>1</td>
-    <td>N/A</td>
+    <td>N/A<td>
     <td>N/A<td>
   </tr>
   <tr>
