@@ -1,7 +1,7 @@
 $high-emph: rgba(white, 0.87);
 $med-emph: rgba(rgb(170, 170, 170), 0.80); //Noicee
 $low-emph: rgba(rgb(170, 170, 170), 0.80);
-$dark-grey : #121212; 
+$dark-grey : #926c4d; 
 // $dark-grey : #1F1B24;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
@@ -12,7 +12,7 @@ html, body, input, textarea, select, button {
 }
 
 a {
-    color: rgb(71, 239, 203) !important;
+    color: rgb(170, 170, 170) !important;
 }
 
 a:hover {
@@ -21,6 +21,10 @@ a:hover {
 
 .site-title, .site-title:visited, .site-nav, .page-link {
     color: $high-emph !important;
+}
+
+.site-header {
+    color: rgb(82, 125, 53) !important;
 }
 
 .site-nav {
