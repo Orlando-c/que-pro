@@ -427,7 +427,7 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #1b1b1b !important; }
+html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #1b1b1c !important; }
 
 a { color: #aaaaaa !important; }
 
@@ -437,11 +437,11 @@ a:hover { color: rgba(255, 255, 255, 0.87) !important; }
 
 .site-header { color: #527d35; }
 
-.site-nav { background-color: #1b1b1b; border-color: #3b3b3b; }
+.site-nav { background-color: #1b1b1c; border-color: #3b3b3c; }
 
-* { scrollbar-color: #1b1b1b #3b3b3b; }
+* { scrollbar-color: #1b1b1c #3b3b3c; }
 
-pre, code { border-color: #3b3b3b; background-color: #262626; }
+pre, code { border-color: #3b3b3c; background-color: #262627; }
 
 .page-description { color: rgba(170, 170, 170, 0.8); }
 
@@ -449,19 +449,19 @@ pre, code { border-color: #3b3b3b; background-color: #262626; }
 
 .post-content p, .post-content li { color: rgba(170, 170, 170, 0.8); }
 
-.btn { background-color: #262626 !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #3b3b3b !important; }
+.btn { background-color: #262627 !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #3b3b3c !important; }
 
-.btn:hover { background-color: #1b1b1b !important; }
+.btn:hover { background-color: #1b1b1c !important; }
 
-table th { background-color: #262626; border-color: #3b3b3b; color: rgba(255, 255, 255, 0.87); }
+table th { background-color: #262627; border-color: #3b3b3c; color: rgba(255, 255, 255, 0.87); }
 
-table td { background-color: #1b1b1b; border-color: #3b3b3b; color: rgba(170, 170, 170, 0.8); }
+table td { background-color: #1b1b1c; border-color: #3b3b3c; color: rgba(170, 170, 170, 0.8); }
 
-.flash { color: #1b1b1b !important; filter: brightness(80%); }
+.flash { color: #1b1b1c !important; filter: brightness(80%); }
 
 canvas { filter: invert(100%); }
 
-.post-list > li > div { box-shadow: none !important; background-color: #262626; border: none !important; }
+.post-list > li > div { box-shadow: none !important; background-color: #262627; border: none !important; }
 
 li .post-meta-description { color: rgba(170, 170, 170, 0.8) !important; }
 
