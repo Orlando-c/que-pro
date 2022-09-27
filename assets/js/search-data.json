@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Title",
-            "content": "var magic8Ball = {}; magic8Ball.listOfAnswers = [&quot;No&quot;, &quot;Yes&quot;, &quot;I don&#39;t think so...&quot;, &quot;Theres a chance&quot;, &quot;Maybe &quot;, &quot;Of course!&quot;, &quot;Indubitably&quot;, &quot;In your dreams.&quot;]; magic8Ball.askQuestion = function(question) { var randomNumber = Math.random(); var randomNumberForListOfAnswers = randomNumber * this.listOfAnswers.length; var randomIndex = Math.floor(randomNumberForListOfAnswers); var answer = this.listOfAnswers[randomIndex]; $(&quot;#answer&quot;).text(answer); System.out.println(question); prompt() = guess; System.out.println(guess); System.out.println(answer) }; . [Function] .",
+            "content": "$(document).ready(function() { var magic8ball = {}; magic8ball.listOfAnswers = [&quot;No&quot;, &quot;Yes&quot;, &quot;I don&#39;t think so...&quot;, &quot;Theres a chance&quot;, &quot;Maybe &quot;, &quot;Of course!&quot;, &quot;Indubitably&quot;, &quot;In your dreams.&quot;]; var question = window.prompt(&quot;What is your question?&quot;); document.write(&quot;You wrote&quot; + question); var randomNumber = Math.random(); var randomNumberForListOfAnswers = randomNumber * this.listOfAnswers.length; var randomIndex = Math.floor(randomNumberForListOfAnswers); var answer = this.listOfAnswers[randomIndex]; $(&quot;#answer&quot;).text(answer); }); .",
             "url": "https://orlando-c.github.io/que-pro/2022/09/26/The-Magic-8ball.html",
             "relUrl": "/2022/09/26/The-Magic-8ball.html",
             "date": " • Sep 26, 2022"
