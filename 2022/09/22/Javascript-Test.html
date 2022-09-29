@@ -145,7 +145,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">game</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">genre</span><span class="p">,</span> <span class="nx">year</span><span class="p">)</span> <span class="p">{</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">game</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">genre</span><span class="p">,</span> <span class="nx">year</span><span class="p">,</span> <span class="nx">players</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">genre</span> <span class="o">=</span> <span class="nx">genre</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">year</span> <span class="o">=</span> <span class="nx">year</span><span class="p">;</span>
@@ -181,12 +181,24 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:20
+logItType(movies);
+^
 
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[Function]</pre>
+ReferenceError: logItType is not defined
+    at evalmachine.&lt;anonymous&gt;:20:1
+    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
+    at Object.runInThisContext (vm.js:97:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:758:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</pre>
 </div>
-
 </div>
 
 </div>
