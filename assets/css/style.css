@@ -427,40 +427,40 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #1b1b1c !important; }
+html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #008080 !important; }
 
-a { color: #aaaaaa !important; }
+a { color: #c3c3c3 !important; }
 
 a:hover { color: rgba(255, 255, 255, 0.87) !important; }
 
 .site-title, .site-title:visited, .site-nav, .page-link { color: rgba(255, 255, 255, 0.87) !important; }
 
-.site-nav { background-color: #1b1b1c; border-color: #3b3b3c; }
+.site-nav { background-color: #008080; border-color: #249292; }
 
-* { scrollbar-color: #1b1b1c #3b3b3c; }
+* { scrollbar-color: #008080 #249292; }
 
-pre, code { border-color: #3b3b3c; background-color: #262627; }
+pre, code { border-color: #249292; background-color: #0d8686; }
 
-.page-description { color: rgba(170, 170, 170, 0.8); }
+.page-description { color: rgba(195, 195, 195, 0.8); }
 
-.post-meta { color: rgba(170, 170, 170, 0.8); }
+.post-meta { color: rgba(195, 195, 195, 0.8); }
 
-.post-content p, .post-content li { color: rgba(170, 170, 170, 0.8); }
+.post-content p, .post-content li { color: rgba(195, 195, 195, 0.8); }
 
-.btn { background-color: #262627 !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #3b3b3c !important; }
+.btn { background-color: #0d8686 !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #249292 !important; }
 
-.btn:hover { background-color: #1b1b1c !important; }
+.btn:hover { background-color: #008080 !important; }
 
-table th { background-color: #262627; border-color: #3b3b3c; color: rgba(255, 255, 255, 0.87); }
+table th { background-color: #0d8686; border-color: #249292; color: rgba(255, 255, 255, 0.87); }
 
-table td { background-color: #1b1b1c; border-color: #3b3b3c; color: rgba(170, 170, 170, 0.8); }
+table td { background-color: #008080; border-color: #249292; color: rgba(195, 195, 195, 0.8); }
 
-.flash { color: #1b1b1c !important; filter: brightness(80%); }
+.flash { color: #008080 !important; filter: brightness(80%); }
 
 canvas { filter: invert(100%); }
 
-.post-list > li > div { box-shadow: none !important; background-color: #262627; border: none !important; }
+.post-list > li > div { box-shadow: none !important; background-color: #0d8686; border: none !important; }
 
-li .post-meta-description { color: rgba(170, 170, 170, 0.8) !important; }
+li .post-meta-description { color: rgba(195, 195, 195, 0.8) !important; }
 
 /*# sourceMappingURL=style.css.map */

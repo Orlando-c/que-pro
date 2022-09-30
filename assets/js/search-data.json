@@ -248,6 +248,17 @@
 
   
       ,"page1": {
+          "title": "_other_pages",
+          "content": "Links to other fastpages in group . Colin . Ethan . Jaden .",
+          "url": "https://orlando-c.github.io/que-pro/amigos",
+          "relUrl": "/amigos",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "_about_me",
           "content": "Blog by me obviously. . My name is Orlando Carcamo! Here is some info about me! . I like dogs, please pet your dogs | I like tea… sweet tea… Arizona tea | I play videogames on Xbox (superior console) | Fight me | I like to use legos | .",
           "url": "https://orlando-c.github.io/que-pro/about/",
@@ -260,7 +271,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "_schedule",
           "content": "Trimester 1 APCSP . Week Grading Homework . 0 | N/A | N/A | . 1 | N/A | N/A | . 2 | N/A | N/A | . 3 | N/A | N/A | . 4 | N/A | N/A | . 5 | N/A | N/A | . 6 | N/A | N/A | . 7 | N/A | N/A | . 8 | N/A | N/A | . 9 | N/A | N/A | . 10 | N/A | N/A | . 11 | N/A | N/A | . 12 | N/A | N/A | . Trimester 1 Class-wide Week 1 . Class Week Homework Grade &lt;/tr&gt; APWH | 1 | N/A | N/A | . Court Sports | 1 | N/A | N/A | . Math Int 2-B | 1 | N/A | N/A | . HSE 3 | 1 | N/A | N/A | . APCSP | 1 | N/A | N/A | . &lt;/table&gt; .",
           "url": "https://orlando-c.github.io/que-pro/schedule",
@@ -281,7 +292,7 @@
   
 
   
-      ,"page8": {
+      ,"page9": {
           "title": "_vocab",
           "content": "Different languages (primarily used) . Html (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables . | Python Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis . | Bash Unix shell command language used for software development . | Javascript (JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for web pages . | .",
           "url": "https://orlando-c.github.io/que-pro/vocab/",
@@ -303,7 +314,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://orlando-c.github.io/que-pro/robots.txt",
