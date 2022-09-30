@@ -1,7 +1,7 @@
 $high-emph: rgba(white, 0.87);
-$med-emph: rgba(rgb(170, 170, 170), 0.80); //Noicee
-$low-emph: rgba(rgb(170, 170, 170), 0.80);
-$dirt : #1b1b1c; 
+$med-emph: rgba(rgb(195, 195, 195), 0.80); //Noicee
+$low-emph: rgba(rgb(195, 195, 195), 0.80);
+$dirt : #008080; 
 // $dark-grey : #926c4d;
 $overlay: mix($dirt, white, 95%);
 $overlay-light: mix($dirt, white, 86%);
@@ -12,7 +12,7 @@ html, body, input, textarea, select, button {
 }
 
 a {
-    color: rgb(170, 170, 170) !important;
+    color: rgb(195, 195, 195) !important;
 }
 
 a:hover {
