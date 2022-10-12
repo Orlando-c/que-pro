@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 ms to read
+      5 ms to read
     
 </span></p>
 
@@ -520,27 +520,47 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">menu</span> <span class="o">=</span>  <span class="p">{</span><span class="s2">&quot;borger&quot;</span><span class="p">:</span> <span class="mf">3.99</span><span class="p">,</span>
-         <span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span>
-         <span class="s2">&quot;cola&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span>
-         <span class="s2">&quot;florida especial&quot;</span><span class="p">:</span> <span class="mf">5.99</span><span class="p">}</span>
-<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Menu</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;soda&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span> <span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">3.99</span><span class="p">,</span> <span class="s2">&quot;burger&quot;</span><span class="p">:</span> <span class="mf">4.99</span><span class="p">,</span> <span class="s2">&quot;shake&quot;</span><span class="p">:</span> <span class="mf">2.99</span><span class="p">,</span> <span class="s2">&quot;cookie&quot;</span><span class="p">:</span> <span class="o">.</span><span class="mi">99</span><span class="p">,</span> <span class="s2">&quot;chicken strips&quot;</span><span class="p">:</span> <span class="mf">4.99</span><span class="p">}</span>
+<span class="n">Total</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="c1">#shows the user the menu and prompts them to select an item</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
+<span class="k">def</span> <span class="nf">get_order</span><span class="p">():</span>
+    <span class="n">current_order</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome to Yung Sean, what can I get for you?&quot;</span><span class="p">)</span>
+        <span class="n">Order</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">Order</span> <span class="ow">in</span> <span class="n">Menu</span><span class="p">:</span>
+            <span class="n">current_order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Order</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m sorry, we don&#39;t have that available.&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="n">is_order_complete</span><span class="p">():</span>
+            <span class="k">return</span> <span class="n">current_order</span>
+            <span class="n">Total</span> <span class="o">+=</span> <span class="n">Menu</span><span class="p">[</span><span class="n">Order</span><span class="p">]</span>
 
-<span class="c1">#ideally the code should prompt the user multiple times</span>
-<span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the epic menu&quot;</span><span class="p">)</span>
-<span class="n">fail</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="k">for</span> <span class="n">tempItem</span> <span class="ow">in</span> <span class="n">menu</span><span class="p">:</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">item</span> <span class="o">==</span> <span class="n">tempItem</span><span class="p">):</span>
-        <span class="n">total</span> <span class="o">+=</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
-        <span class="n">fail</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="k">def</span> <span class="nf">is_order_complete</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Anything else? yes/no&quot;</span><span class="p">)</span>
+    <span class="n">Choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">Choice</span> <span class="o">==</span> <span class="s2">&quot;no&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">elif</span> <span class="n">Choice</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Not available&quot;</span><span class="p">)</span>
 
-<span class="c1">#code should add the price of the menu items selected by the user </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">output_order</span><span class="p">(</span><span class="n">order_list</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You ordered&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">Order</span> <span class="ow">in</span> <span class="n">order_list</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">Order</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That will be &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Total</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">Order</span> <span class="o">=</span> <span class="n">get_order</span><span class="p">()</span>
+    <span class="n">output_order</span><span class="p">(</span><span class="n">Order</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please drive through to the second window.&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -553,11 +573,20 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Menu
-borger  $3.99
-fries  $1.99
-drink  $0.99
-3.99
+<pre>Welcome to What can I get for you?
+Anything else? yes/no
+Welcome to What can I get for you?
+Anything else? yes/no
+Welcome to What can I get for you?
+Anything else? yes/no
+You ordered
+burger
+That will be0
+fries
+That will be0
+shake
+That will be0
+Please drive through to the second window.
 </pre>
 </div>
 </div>
