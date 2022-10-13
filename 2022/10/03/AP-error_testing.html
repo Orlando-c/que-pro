@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 ms to read
+      4 ms to read
     
 </span></p>
 
@@ -526,8 +526,7 @@ window.onload = wrap_img;
 <span class="k">def</span> <span class="nf">get_order</span><span class="p">():</span>
     <span class="n">current_order</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome to Yung Sean, what can I get for you?&quot;</span><span class="p">)</span>
-        <span class="n">Order</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+        <span class="n">Order</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Welcome to Yung Sean, what can I get for you?&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">Order</span> <span class="ow">in</span> <span class="n">Menu</span><span class="p">:</span>
             <span class="n">current_order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Order</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
@@ -538,8 +537,7 @@ window.onload = wrap_img;
             <span class="n">Total</span> <span class="o">+=</span> <span class="n">Menu</span><span class="p">[</span><span class="n">Order</span><span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">is_order_complete</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Anything else? yes/no&quot;</span><span class="p">)</span>
-    <span class="n">Choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="n">Choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Anything else? yes/no&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">Choice</span> <span class="o">==</span> <span class="s2">&quot;no&quot;</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
     <span class="k">elif</span> <span class="n">Choice</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
@@ -564,33 +562,6 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Welcome to What can I get for you?
-Anything else? yes/no
-Welcome to What can I get for you?
-Anything else? yes/no
-Welcome to What can I get for you?
-Anything else? yes/no
-You ordered
-burger
-That will be0
-fries
-That will be0
-shake
-That will be0
-Please drive through to the second window.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
