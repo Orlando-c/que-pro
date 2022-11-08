@@ -441,11 +441,11 @@ a:hover { color: rgba(255, 255, 255, 0.87) !important; }
 
 pre, code { border-color: #24a2a2; background-color: #0d9898; }
 
-.page-description { color: rgba(195, 195, 195, 0.8); }
+.page-description { color: rgba(155, 155, 155, 0.9); }
 
-.post-meta { color: rgba(195, 195, 195, 0.8); }
+.post-meta { color: rgba(130, 130, 130, 0.9); }
 
-.post-content p, .post-content li { color: rgba(195, 195, 195, 0.8); }
+.post-content p, .post-content li { color: rgba(155, 155, 155, 0.9); }
 
 .btn { background-color: #0d9898 !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #24a2a2 !important; }
 
@@ -453,7 +453,7 @@ pre, code { border-color: #24a2a2; background-color: #0d9898; }
 
 table th { background-color: #0d9898; border-color: #24a2a2; color: rgba(255, 255, 255, 0.87); }
 
-table td { background-color: #009393ff; border-color: #24a2a2; color: rgba(195, 195, 195, 0.8); }
+table td { background-color: #009393ff; border-color: #24a2a2; color: rgba(155, 155, 155, 0.9); }
 
 .flash { color: #009393ff !important; filter: brightness(80%); }
 
@@ -461,6 +461,6 @@ canvas { filter: invert(100%); }
 
 .post-list > li > div { box-shadow: none !important; background-color: #0d9898; border: none !important; }
 
-li .post-meta-description { color: rgba(195, 195, 195, 0.8) !important; }
+li .post-meta-description { color: rgba(155, 155, 155, 0.9) !important; }
 
 /*# sourceMappingURL=style.css.map */
