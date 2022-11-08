@@ -329,7 +329,7 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .page-content { -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility !important; font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important; }
 
-.post-content p, .post-content li { font-size: 20px; color: #515151; }
+.post-content p, .post-content li { font-size: 20px; color: #e6e6e6; }
 
 .post-link { font-weight: normal; }
 
@@ -351,7 +351,7 @@ pre { margin-bottom: 1.5rem !important; }
 
 li h3, li h4 { margin-top: .05rem !important; margin-bottom: .05rem !important; }
 
-li .post-meta-description { color: #585858; font-size: 15px; margin-top: .05rem !important; margin-bottom: .05rem !important; }
+li .post-meta-description { color: #c8c8c8; font-size: 15px; margin-top: .05rem !important; margin-bottom: .05rem !important; }
 
 details.description[open] summary::after { content: attr(data-open); }
 
