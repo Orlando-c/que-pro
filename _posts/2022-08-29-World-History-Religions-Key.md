@@ -1,6 +1,9 @@
 ---
 layout: post
 ---
+---
+layout: post
+---
 Fill in something for each box. If the religion does not have that category, write NONE.
 
 <table>
