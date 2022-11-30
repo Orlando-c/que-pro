@@ -429,7 +429,7 @@ pre code { font-size: 15px !important; }
 /*----- ADD YOUR STYLES BELOW -------*/
 html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #009393ff !important; }
 
-a { color: #c3c3c3 !important; }
+a { color: #efefef !important; }
 
 a:hover { color: rgba(255, 255, 255, 0.87) !important; }
 
