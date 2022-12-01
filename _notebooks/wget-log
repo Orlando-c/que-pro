@@ -1,0 +1,13 @@
+--2022-12-01 14:45:13--  https://raw.githubusercontent.com/JasoXDDD/booleanConditionals/master/_notebooks/2022-11-30-homework.ipynb
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... failed: Connection timed out.
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1938 (1.9K) [text/plain]
+Saving to: ‘2022-11-30-homework.ipynb’
+
+     0K .                                                     100% 16.1M=0s
+
+2022-12-01 14:49:37 (16.1 MB/s) - ‘2022-11-30-homework.ipynb’ saved [1938/1938]
+
