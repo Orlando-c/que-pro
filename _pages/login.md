@@ -1,6 +1,6 @@
 ---
 layout: page
-title: /login
+title: /login/
 permalink: /login/
 ---
 
