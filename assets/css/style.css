@@ -427,19 +427,23 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: rgba(194, 250, 255, 0.87) !important; background-color: #181818 !important; }
+html, body, input, textarea, select, button { color: rgba(194, 250, 255, 0.87) !important; }
 
-a { color: #efefef !important; }
+/* Define the gradient colors */
+/* Add the gradient to the body background */
+body { background: linear-gradient(to bottom, #181818, #93d0ff); }
+
+a { color: white !important; }
 
 a:hover { color: rgba(194, 250, 255, 0.87) !important; }
 
 .site-title, .site-title:visited, .site-nav, .page-link { color: rgba(194, 250, 255, 0.87) !important; }
 
-.site-nav { background-color: #181818; border-color: #383838; }
+.site-nav { background-color: #181818; border-color: #181818; }
 
-* { scrollbar-color: #181818 #383838; }
+* { scrollbar-color: #181818 #181818; }
 
-pre, code { border-color: #383838; background-color: #242424; }
+pre, code { border-color: #181818; background-color: #181818; }
 
 .page-description { color: rgba(194, 250, 255, 0.9); }
 
@@ -447,19 +451,19 @@ pre, code { border-color: #383838; background-color: #242424; }
 
 .post-content p, .post-content li { color: rgba(194, 250, 255, 0.9); }
 
-.btn { background-color: #242424 !important; color: rgba(194, 250, 255, 0.87) !important; border-color: #383838 !important; }
+.btn { background-color: #181818 !important; color: rgba(194, 250, 255, 0.87) !important; border-color: #181818 !important; }
 
 .btn:hover { background-color: #181818 !important; }
 
-table th { background-color: #242424; border-color: #383838; color: rgba(194, 250, 255, 0.87); }
+table th { background-color: #181818; border-color: #181818; color: rgba(194, 250, 255, 0.87); }
 
-table td { background-color: #181818; border-color: #383838; color: rgba(194, 250, 255, 0.9); }
+table td { background-color: #181818; border-color: #181818; color: rgba(194, 250, 255, 0.9); }
 
 .flash { color: #181818 !important; filter: brightness(80%); }
 
 canvas { filter: invert(100%); }
 
-.post-list > li > div { box-shadow: none !important; background-color: #242424; border: none !important; }
+.post-list > li > div { box-shadow: none !important; background-color: #181818; border: none !important; }
 
 li .post-meta-description { color: rgba(194, 250, 255, 0.9) !important; }
 
