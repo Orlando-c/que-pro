@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /amigos/
-title: /friends/
+permalink: /social/
+title: /social/
 ---
 
-<h1>Find someone</h1>
+<center><h1>Find someone</h1></center>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +13,13 @@ title: /friends/
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Profile Fetch Api</title>
+    <center><title>Github Profile Fetch Api</title></center>
 </head>
 <body>
     <div class="container">
         <div class="search-area">
-            <input type="text" name="" id="username" placeholder="Enter Github Username" autocomplete="off">
-            <button onclick="getDetails();">Get Details</button>
+            <center><input type="text" name="" id="username" placeholder="Enter Github Username" autocomplete="off"></center>
+            <center><button onclick="getDetails();">Get Details</button></center>
         </div>
         <div class="output-container" id="output">
             <div class="profile" id="profile"></div>
@@ -57,26 +57,7 @@ title: /friends/
 </script>
 </html>
 
-<h1>Login</h1>
-
-<table>
-    <tr>
-        <th><label for="name">Name</label></th>
-        <th><label for="email">Email</label></th>
-        <th><label for="password">Password</label></th>
-        <th><label for="phone">Phone</label></th>
-    </tr>
-    <tr>
-        <td><input type="text" name="name" id="name" required></td>
-        <td><input type="email" name="email" id="email" placeholder="abc@xyz.org" required></td>
-        <td><input type="password" name="password" id="password" required></td>
-        <td><input type="tel" name="phone_num" id="phone_num"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            placeholder="999-999-9999"></td>
-        <td ><button onclick="create_User()">Create</button></td>
-    </tr>
-</table>
-
+<center><h1>Create User</h1></center>
 
 <form action="create_User()">
     <p><label>
@@ -109,3 +90,23 @@ title: /friends/
         <center><button>Create</button></center>
     </p>
 </form>
+
+<center><h1>Login</h1></center>
+
+<table>
+    <tr>
+        <th><label for="name">Name</label></th>
+        <th><label for="email">Email</label></th>
+        <th><label for="password">Password</label></th>
+        <th><label for="phone">Phone</label></th>
+    </tr>
+    <tr>
+        <td><input type="text" name="name" id="name" required></td>
+        <td><input type="email" name="email" id="email" placeholder="abc@xyz.org" required></td>
+        <td><input type="password" name="password" id="password" required></td>
+        <td><input type="tel" name="phone_num" id="phone_num"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="999-999-9999"></td>
+        <td ><button onclick="create_User()">Create</button></td>
+    </tr>
+</table>
