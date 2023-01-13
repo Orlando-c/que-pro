@@ -370,7 +370,7 @@
   
       ,"page2": {
           "title": "/friends/",
-          "content": ". &lt;p1 This will take you to Colin Blog **[~]&gt; . &lt;p1 This will take you to the Best Group Blog **[~]&gt; . &lt;p1 This will take you to Jaden Blog **[~]&gt; . . &lt;!DOCTYPE html&gt; . Github Profile Fetch Api . Get Details . . | | . .",
+          "content": "&lt;!DOCTYPE html&gt; . Github Profile Fetch Api . Get Details . . | | . .",
           "url": "https://orlando-c.github.io/que-pro/amigos/",
           "relUrl": "/amigos/",
           "date": ""
