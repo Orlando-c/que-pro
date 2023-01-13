@@ -3,16 +3,25 @@ $med-emph: rgba(rgb(194, 250, 255), 0.90); //Noicee
 $low-emph: rgba(rgb(194, 250, 255), 0.90);
 $dirt : rgb(24, 24, 24); 
 // $dark-grey : #926c4d;
-$overlay: mix($dirt, white, 95%);
-$overlay-light: mix($dirt, white, 86%);
+$overlay: mix($dirt, rgb(255, 255, 255), 100%);
+$overlay-light: mix($dirt, rgb(255, 255, 255), 100%);
 
 html, body, input, textarea, select, button {   
   color: $high-emph !important;
-  background-color: $dirt !important;
 }
 
+/* Define the gradient colors */
+$gradient-start: rgb(24, 24, 24);
+$gradient-end: rgb(147, 208, 255);
+
+/* Add the gradient to the body background */
+body {
+  background: linear-gradient(to bottom, $gradient-start, $gradient-end);
+}
+
+
 a {
-    color: rgb(239, 239, 239) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 a:hover {
