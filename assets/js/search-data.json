@@ -370,7 +370,7 @@
   
       ,"page2": {
           "title": "/friends/",
-          "content": "Find someone . &lt;!DOCTYPE html&gt; . Github Profile Fetch Api . Get Details . . | | . . Login . Name Email Password Phone . | | | | Create | . Name: . User ID: . Password: . Verify Password: . Phone: . Birthday: . Create .",
+          "content": "Find someone . &lt;!DOCTYPE html&gt; . Github Profile Fetch Api . Get Details . . | | . . Login . Name Email Password Phone . | | | | Create | . Name: . User ID: &lt;/label&gt;&lt;/p&gt; Password: . Verify Password: . Phone: . Birthday: . Create . &lt;/form&gt; .",
           "url": "https://orlando-c.github.io/que-pro/amigos/",
           "relUrl": "/amigos/",
           "date": ""
