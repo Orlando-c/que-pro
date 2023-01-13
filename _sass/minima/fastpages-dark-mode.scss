@@ -2,6 +2,7 @@ $high-emph: rgba(rgb(166, 211, 255), 1);
 $med-emph: rgba(rgb(227, 227, 227), 1); //Noicee
 $low-emph: rgba(rgb(166, 211, 255), 1);
 $highlight: rgba(rgb(255, 255, 255), 1);
+$transperent: rgba(rgb(255, 255, 255), 0.25);
 $scroll: rgba(rgb(194, 250, 255), 1);
 $dirt : rgb(24, 24, 24); 
 // $dark-grey : #926c4d;
@@ -77,7 +78,6 @@ table th{
 }
 
 table td{
-    background-color: $dirt;
     border-color: $overlay-light;
     color: $med-emph;
 }
