@@ -368,11 +368,21 @@
   
 
   
-      ,"page2": {
-          "title": "/friends/",
-          "content": "Find someone . &lt;!DOCTYPE html&gt; . Github Profile Fetch Api . Get Details . . | | . . Login . Name Email Password Phone . | | | | Create | . Name: . User ID: &lt;/label&gt;&lt;/p&gt; Password: . Verify Password: . Phone: . Birthday: . Create . &lt;/form&gt; .",
-          "url": "https://orlando-c.github.io/que-pro/amigos/",
-          "relUrl": "/amigos/",
+
+  
+  
+
+  
+
+  
+  
+
+  
+      ,"page6": {
+          "title": "/social/",
+          "content": "Find someone . &lt;!DOCTYPE html&gt; . Github Profile Fetch Api . Get Details . . | | . . Create User . Name: . User ID: &lt;/label&gt;&lt;/p&gt; Password: . Verify Password: . Phone: . Birthday: . Create . &lt;/form&gt; Login . Name Email Password Phone . | | | | Create | . .",
+          "url": "https://orlando-c.github.io/que-pro/social/",
+          "relUrl": "/social/",
           "date": ""
       }
       
@@ -381,27 +391,6 @@
   
 
   
-      ,"page4": {
-          "title": "/login/",
-          "content": "Test .",
-          "url": "https://orlando-c.github.io/que-pro/login/",
-          "relUrl": "/login/",
-          "date": ""
-      }
-      
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-
-  
   
 
   
@@ -418,7 +407,7 @@
   
 
   
-      ,"page15": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://orlando-c.github.io/que-pro/robots.txt",
