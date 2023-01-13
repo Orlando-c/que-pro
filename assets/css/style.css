@@ -427,7 +427,7 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: rgba(194, 250, 255, 0.95) !important; }
+html, body, input, textarea, select, button { color: rgba(174, 214, 255, 0.95) !important; }
 
 /* Define the gradient colors */
 /* Add the gradient to the body background */
@@ -437,7 +437,7 @@ a { color: white !important; }
 
 a:hover { color: white !important; }
 
-.site-title, .site-title:visited, .site-nav, .page-link { color: rgba(194, 250, 255, 0.95) !important; }
+.site-title, .site-title:visited, .site-nav, .page-link { color: rgba(174, 214, 255, 0.95) !important; }
 
 .site-nav { background-color: #181818; border-color: #181818; }
 
@@ -447,15 +447,15 @@ pre, code { border-color: #181818; background-color: #181818; }
 
 .page-description { color: rgba(227, 227, 227, 0.9); }
 
-.post-meta { color: rgba(174, 210, 255, 0.85); }
+.post-meta { color: rgba(174, 214, 255, 0.85); }
 
 .post-content p, .post-content li { color: rgba(227, 227, 227, 0.9); }
 
-.btn { background-color: #181818 !important; color: rgba(194, 250, 255, 0.95) !important; border-color: #181818 !important; }
+.btn { background-color: #181818 !important; color: rgba(174, 214, 255, 0.95) !important; border-color: #181818 !important; }
 
 .btn:hover { background-color: #181818 !important; }
 
-table th { background-color: #181818; border-color: #181818; color: rgba(194, 250, 255, 0.95); }
+table th { background-color: #181818; border-color: #181818; color: rgba(174, 214, 255, 0.95); }
 
 table td { background-color: #181818; border-color: #181818; color: rgba(227, 227, 227, 0.9); }
 
