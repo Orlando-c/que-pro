@@ -6,7 +6,7 @@ permalink: /bio/
 
 # About Me!
 
-### My name is Orlando J. Carcamo, I am currently a sophomore attending Del Norte High School. I prefer mornings and nights over noon and evening, certified tech repair-guy, videogame connoissuer, and pro lego set builder.
+- My name is Orlando J. Carcamo, I am currently a sophomore attending Del Norte High School. I prefer mornings and nights over noon and evenings, certified tech repair-guy, videogame connoissuer, and pro lego set builder.
 
 # Where to find me
 

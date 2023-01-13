@@ -1,6 +1,6 @@
-$high-emph: rgba(rgb(174, 214, 255), 0.95);
-$med-emph: rgba(rgb(227, 227, 227), 0.90); //Noicee
-$low-emph: rgba(rgb(174, 214, 255), 0.85);
+$high-emph: rgba(rgb(166, 211, 255), 1);
+$med-emph: rgba(rgb(227, 227, 227), 1); //Noicee
+$low-emph: rgba(rgb(166, 211, 255), 1);
 $highlight: rgba(rgb(255, 255, 255), 1);
 $scroll: rgba(rgb(194, 250, 255), 1);
 $dirt : rgb(24, 24, 24); 
@@ -14,7 +14,7 @@ html, body, input, textarea, select, button {
 
 /* Define the gradient colors */
 $gradient-start: rgb(24, 24, 22);
-$gradient-end: rgb(1, 35, 97);
+$gradient-end: rgb(1, 36, 100);
 
 /* Add the gradient to the body background */
 body {
