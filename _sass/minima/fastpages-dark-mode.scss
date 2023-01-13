@@ -1,6 +1,8 @@
-$high-emph: rgba(rgb(194, 250, 255), 0.87);
-$med-emph: rgba(rgb(194, 250, 255), 0.90); //Noicee
-$low-emph: rgba(rgb(194, 250, 255), 0.90);
+$high-emph: rgba(rgb(194, 250, 255), 0.95);
+$med-emph: rgba(rgb(227, 227, 227), 0.90); //Noicee
+$low-emph: rgba(rgb(174, 210, 255), 0.85);
+$highlight: rgba(rgb(255, 255, 255), 1);
+$scroll: rgba(rgb(194, 250, 255), 1);
 $dirt : rgb(24, 24, 24); 
 // $dark-grey : #926c4d;
 $overlay: mix($dirt, rgb(255, 255, 255), 100%);
@@ -11,21 +13,20 @@ html, body, input, textarea, select, button {
 }
 
 /* Define the gradient colors */
-$gradient-start: rgb(24, 24, 24);
-$gradient-end: rgb(147, 208, 255);
+$gradient-start: rgb(24, 24, 22);
+$gradient-end: rgb(1, 35, 97);
 
 /* Add the gradient to the body background */
 body {
   background: linear-gradient(to bottom, $gradient-start, $gradient-end);
 }
 
-
 a {
     color: rgb(255, 255, 255) !important;
 }
 
 a:hover {
-    color:$high-emph !important;
+    color:$highlight !important;
 }
 
 .site-title, .site-title:visited, .site-nav, .page-link {
@@ -38,7 +39,7 @@ a:hover {
 }
 
 * {
-    scrollbar-color: $dirt $overlay-light;
+    scrollbar-color: $scroll $overlay-light;
 }
 
 pre, code {
