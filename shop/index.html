@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>/social/ | Users\Orlando&gt; cd que-pro</title>
+<title>/shop/ | Users\Orlando&gt; cd que-pro</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="/social/" />
+<meta property="og:title" content="/shop/" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="My name is Orlando Carcamo. I am new to this area of expertise and I am excited to learn more and start my path towards my carrer! Made with fastpages, an easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="My name is Orlando Carcamo. I am new to this area of expertise and I am excited to learn more and start my path towards my carrer! Made with fastpages, an easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://orlando-c.github.io/que-pro/social/" />
-<meta property="og:url" content="https://orlando-c.github.io/que-pro/social/" />
+<link rel="canonical" href="https://orlando-c.github.io/que-pro/shop/" />
+<meta property="og:url" content="https://orlando-c.github.io/que-pro/shop/" />
 <meta property="og:site_name" content="Users\Orlando&gt; cd que-pro" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="/social/" />
+<meta property="twitter:title" content="/shop/" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"My name is Orlando Carcamo. I am new to this area of expertise and I am excited to learn more and start my path towards my carrer! Made with fastpages, an easy to use blogging platform with support for Jupyter Notebooks.","headline":"/social/","url":"https://orlando-c.github.io/que-pro/social/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"My name is Orlando Carcamo. I am new to this area of expertise and I am excited to learn more and start my path towards my carrer! Made with fastpages, an easy to use blogging platform with support for Jupyter Notebooks.","headline":"/shop/","url":"https://orlando-c.github.io/que-pro/shop/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/que-pro/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://orlando-c.github.io/que-pro/feed.xml" title="Users\Orlando&gt; cd que-pro" /><link rel="shortcut icon" type="image/x-icon" href="/que-pro/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -72,116 +72,63 @@ window.onload = wrap_img;
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">/social/</h1>
+    <h1 class="post-title">/shop/</h1>
   </header>
 
   <div class="post-content">
-    <center><h1>Find someone</h1></center>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <center><title>Github Profile Fetch Api</title></center>
-</head>
-<body>
-    <div class="container">
-        <div class="search-area">
-            <center><input type="text" name="" id="username" placeholder="Enter Github Username" autocomplete="off"></center>
-            <center><button onclick="getDetails();">Get Details</button></center>
-        </div>
-        <div class="output-container" id="output">
-            <div class="profile" id="profile"></div>
-            <div class="username">
-                <h1 id="name"></h1>
-            </div>
-            <div class="bio">
-                <p id="bio"></p>
-            </div>
-            <div class="info">
-                <ul>
-                    <li id="followers"></li>
-                    <li id="following"></li>
-                </ul>
-            </div>
-        </div>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <form>
+      <label for="product1">Product 1:</label>
+      <input type="text" id="product1" name="product1" placeholder="Enter product name">
+      <button type="button" onclick="addToCart('product1')">Add to Cart</button>
+      <br>
+      <label for="product2">Product 2:</label>
+      <input type="text" id="product2" name="product2" placeholder="Enter product name">
+      <button type="button" onclick="addToCart('product2')">Add to Cart</button>
+      <br>
+      <label for="product3">Product 3:</label>
+      <input type="text" id="product3" name="product3" placeholder="Enter product name">
+      <button type="button" onclick="addToCart('product3')">Add to Cart</button>
+    </form>
+    <h2>My Cart</h2>
+    <ul id="cart-items"></ul>
+    <button onclick="checkout()">Checkout</button>
+    <div id="checkout-screen" style="display: none;">
+      <h2>Thank you for your purchase!</h2>
+      <p>Your order has been placed and will be shipped to you soon.</p>
     </div>
-</body>
-<script>
-    function getDetails(){
-        document.getElementById('output').style.display="block";
-        const name=document.getElementById('username').value;
-        fetch(`https://api.github.com/users/${name}`)
-        .then(response=>response.json().then(data=>{
-            console.log(data)
-            document.getElementById('name').innerHTML=data.name;
-            document.getElementById('bio').innerHTML=data.bio;
-            document.getElementById('followers').innerHTML=data.followers +" Followers";
-            document.getElementById('following').innerHTML=data.following + " Following";
-            document.getElementById('profile').innerHTML=`
-            <img src="${data.avatar_url}" />
-            `
-        }))
-    }
-</script>
+    <script>
+      var cart = [];
+      function addToCart(productId) {
+        var productName = document.getElementById(productId).value;
+        cart.push(productName);
+        var cartList = document.getElementById("cart-items");
+        var newItem = document.createElement("li");
+        newItem.innerHTML = productName;
+        cartList.appendChild(newItem);
+      }
+      function checkout() {
+        var checkoutScreen = document.getElementById("checkout-screen");
+        checkoutScreen.style.display = "block";
+      }
+    </script>
+  </body>
 </html>
 
-<center><h1>Create User</h1></center>
-
-<form action="create_User()">
-    <p><label>
-        <center>Name:</center>
-        <center><input type="text" name="name" id="name" required></center>
-    </label></p>
-    <p><label>
-        <center>User ID:</center>
-        <center><input type="text" name="uid" id="uid" required><center>
-    </label></p>
-    <p><label>
-        <center>Password:</center>
-        <center><input type="password" name="password" id="password" required></center>
-    </label></p>
-    <p><label>
-        <center>Verify Password:</center>
-        <center><input type="password" name="passwordV" id="passwordV" required></center>
-    </label></p>
-    <p><label>
-        <center>Phone:</center>
-        <center><input type="tel" name="phone_num" id="phone_num"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            placeholder="999-999-9999"></center>
-    </label></p>
-    <p><label>
-        <center>Birthday:</center>
-        <center><input type="date" name="dob" id="dob"></center>
-    </label></p>
-    <p>
-        <center><button>Create</button></center>
-    </p>
-</form>
-
-<center><h1>Login</h1></center>
-
-<table>
-    <tr>
-        <th><label for="name">Name</label></th>
-        <th><label for="email">Email</label></th>
-        <th><label for="password">Password</label></th>
-        <th><label for="phone">Phone</label></th>
-    </tr>
-    <tr>
-        <td><input type="text" name="name" id="name" required></td>
-        <td><input type="email" name="email" id="email" placeholder="abc@xyz.org" required></td>
-        <td><input type="password" name="password" id="password" required></td>
-        <td><input type="tel" name="phone_num" id="phone_num"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            placeholder="999-999-9999"></td>
-        <td ><button onclick="create_User()">Create</button></td>
-    </tr>
-</table>
+<select id="select-menu" name="select-menu">
+    <option value="option1">TONKA STRONG BLACK</option>
+    <option value="option2">TONKA STRONG BLUE</option>
+    <option value="option3">TONKA STRONG NAVY</option>
+    <option value="option4">TONKA STRONG BROWN</option>
+    <option value="option5">TONKA STRONG GREY</option>
+    <option value="option6">TONKA STRONG RED</option>
+  </select>
   </div>
 
 </article>
