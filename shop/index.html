@@ -84,84 +84,53 @@ window.onload = wrap_img;
   <body>
     <h1>Shopping Cart</h1>
     <form>
-      <label for="itemName">Item Name:</label>
-      <input type="text" id="itemName" name="itemName">
+      <img src="/images/tonkablack.png" alt="Tonka Yellow Mellow">
+      <label for="item1">Tonka Yellow Mellow T-Shirt:</label>
+      <input type="text" id="item1" name="item1">
+      <button type="button" onclick="addToCart('item1')">Add to Cart</button>
       <br>
-      <label for="itemPrice">Item Price:</label>
-      <input type="text" id="itemPrice" name="itemPrice">
+      <img src="/images/gettonka.webp" alt="Tonka Get Tonka">
+      <label for="item2">Get Tonka'd T-Shirt:</label>
+      <input type="text" id="item2" name="item2">
+      <button type="button" onclick="addToCart('item2')">Add to Cart</button>
       <br>
-      <button type="submit" onclick="addToCart()">Add to Cart</button>
+      <img src="/images/tonkasoccer.webp" alt="Tonka SoccerSleve">
+      <label for="item3">Tonka Soccer Sport Longsleve:</label>
+      <input type="text" id="item3" name="item3">
+      <button type="button" onclick="addToCart('item3')">Add to Cart</button>
+      <br>
     </form>
     <br>
-    <div id="cartItems">
-      <!-- Cart items will be displayed here -->
-    </div>
+    <button type="button" onclick="saveCart()">Save Cart</button>
+    <button type="button" onclick="displayCart()">View Cart</button>
     <br>
-    <button onclick="showEndScreen()">Checkout</button>
-    <br>
-    <div id="endScreen" style="display: none;">
-      <h2>Order Summary</h2>
-      <div id="orderItems">
-        <!-- Order items will be displayed here -->
-      </div>
-      <br>
-      <button onclick="purchase()">Purchase</button>
-    </div>
-    
+    <div id="cart"></div>
     <script>
-      var cart = [];
-
-      function addToCart() {
-    var itemName = document.getElementById("itemName").value;
-    var itemPrice = document.getElementById("itemPrice").value;
-    var item = { name: itemName, price: itemPrice };
-    cart.push(item);
-    displayCartItems();
-  }
-  
-  function displayCartItems() {
-    var cartItemsDiv = document.getElementById("cartItems");
-    cartItemsDiv.innerHTML = "";
-    for (var i = 0; i < cart.length; i++) {
-      cartItemsDiv.innerHTML += "<p>" + cart[i].name + " - $" + cart[i].price + "</p>";
-    }
-  }
-  
-  function showEndScreen() {
-    var endScreenDiv = document.getElementById("endScreen");
-    endScreenDiv.style.display = "block";
-    displayOrderItems();
-  }
-  
-  function displayOrderItems() {
-    var orderItemsDiv = document.getElementById("orderItems");
-    orderItemsDiv.innerHTML = "";
-    for (var i = 0; i < cart.length; i++) {
-      orderItemsDiv.innerHTML += "<p>" + cart[i].name + " - $" + cart[i].price + "</p>";
-    }
-  }
-  
-  function purchase() {
-    alert("Thank you for your purchase!");
-    cart = [];
-    displayCartItems();
-    var endScreenDiv = document.getElementById("endScreen");
-    endScreenDiv.style.display = "none";
-  }
-</script>
-
+      let cart = [];
+      function addToCart(item) {
+        cart.push(item);
+        alert("Item added to cart: " + item);
+      }
+      function saveCart() {
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Cart saved.");
+      }
+      function displayCart() {
+        cart = JSON.parse(localStorage.getItem("cart"));
+        let cartDiv = document.getElementById("cart");
+        let items = "";
+        for (let i = 0; i < cart.length; i++) {
+          items += cart[i] + "<br>";
+        }
+        cartDiv.innerHTML = items;
+        let buyBtn = document.createElement("BUTTON");
+        let t = document.createTextNode("Buy Now");
+        buyBtn.appendChild(t);
+        cartDiv.appendChild(buyBtn);
+      }
+    </script>
   </body>
 </html>
-
-<label for="select-menu">Select an option:</label>
-<select id="select-menu" name="select-menu">
-  <option value="option1">Option 1</option>
-  <button type="submit" onclick="addToCart()">Add to Cart</button>
-  <option value="option2">Option 2</option>
-  <button type="submit" onclick="addToCart()">Add to Cart</button>
-  <option value="option3">Option 3</option>
-  <button type="submit" onclick="addToCart()">Add to Cart</button>
-</select>
   </div>
 
 </article>
