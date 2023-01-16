@@ -380,7 +380,7 @@
   
       ,"page6": {
           "title": "/shop/",
-          "content": "&lt;!DOCTYPE html&gt; . Shopping Cart . Shopping Cart . Product 1: Add to Cart Product 2: Add to Cart Product 3: Add to Cart My Cart . . Checkout Thank you for your purchase! . Your order has been placed and will be shipped to you soon. . . TONKA STRONG BLACK TONKA STRONG BLUE TONKA STRONG NAVY TONKA STRONG BROWN TONKA STRONG GREY TONKA STRONG RED .",
+          "content": "&lt;!DOCTYPE html&gt; . Shopping Cart . Shopping Cart . Item Name: Item Price: Add to Cart Checkout Order Summary . Purchase . Select an option: Option 1 Option 2 Option 3 .",
           "url": "https://orlando-c.github.io/que-pro/shop/",
           "relUrl": "/shop/",
           "date": ""
