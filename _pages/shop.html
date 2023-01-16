@@ -1,0 +1,58 @@
+---
+layout: page
+permalink: /shop/
+title: /shop/
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <form>
+      <label for="product1">Product 1:</label>
+      <input type="text" id="product1" name="product1" placeholder="Enter product name">
+      <button type="button" onclick="addToCart('product1')">Add to Cart</button>
+      <br>
+      <label for="product2">Product 2:</label>
+      <input type="text" id="product2" name="product2" placeholder="Enter product name">
+      <button type="button" onclick="addToCart('product2')">Add to Cart</button>
+      <br>
+      <label for="product3">Product 3:</label>
+      <input type="text" id="product3" name="product3" placeholder="Enter product name">
+      <button type="button" onclick="addToCart('product3')">Add to Cart</button>
+    </form>
+    <h2>My Cart</h2>
+    <ul id="cart-items"></ul>
+    <button onclick="checkout()">Checkout</button>
+    <div id="checkout-screen" style="display: none;">
+      <h2>Thank you for your purchase!</h2>
+      <p>Your order has been placed and will be shipped to you soon.</p>
+    </div>
+    <script>
+      var cart = [];
+      function addToCart(productId) {
+        var productName = document.getElementById(productId).value;
+        cart.push(productName);
+        var cartList = document.getElementById("cart-items");
+        var newItem = document.createElement("li");
+        newItem.innerHTML = productName;
+        cartList.appendChild(newItem);
+      }
+      function checkout() {
+        var checkoutScreen = document.getElementById("checkout-screen");
+        checkoutScreen.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
+
+<select id="select-menu" name="select-menu">
+    <option value="option1">TONKA STRONG BLACK</option>
+    <option value="option2">TONKA STRONG BLUE</option>
+    <option value="option3">TONKA STRONG NAVY</option>
+    <option value="option4">TONKA STRONG BROWN</option>
+    <option value="option5">TONKA STRONG GREY</option>
+    <option value="option6">TONKA STRONG RED</option>
+  </select>
