@@ -1,6 +1,7 @@
 ---
 keywords: fastai
-title: Title
+description: Random math gen
+title: The Magic 8-Ball
 nb_path: _notebooks/2022-09-26-The-Magic-8ball.ipynb
 layout: notebook
 ---

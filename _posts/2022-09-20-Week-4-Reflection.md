@@ -1,6 +1,7 @@
 ---
 keywords: fastai
-title: Title
+description: School board stuff
+title: Agile Methodology
 nb_path: _notebooks/2022-09-20-Week-4-Reflection.ipynb
 layout: notebook
 ---

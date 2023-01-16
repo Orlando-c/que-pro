@@ -1,9 +1,6 @@
 ---
 layout: post
 ---
----
-layout: post
----
 **APCSP Plan for Flask Portfolio Group Project**
 
 <table>
