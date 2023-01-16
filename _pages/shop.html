@@ -3,6 +3,7 @@ layout: page
 permalink: /shop/
 title: /shop/
 ---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,48 +12,78 @@ title: /shop/
   <body>
     <h1>Shopping Cart</h1>
     <form>
-      <label for="product1">Product 1:</label>
-      <input type="text" id="product1" name="product1" placeholder="Enter product name">
-      <button type="button" onclick="addToCart('product1')">Add to Cart</button>
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" name="itemName">
       <br>
-      <label for="product2">Product 2:</label>
-      <input type="text" id="product2" name="product2" placeholder="Enter product name">
-      <button type="button" onclick="addToCart('product2')">Add to Cart</button>
+      <label for="itemPrice">Item Price:</label>
+      <input type="text" id="itemPrice" name="itemPrice">
       <br>
-      <label for="product3">Product 3:</label>
-      <input type="text" id="product3" name="product3" placeholder="Enter product name">
-      <button type="button" onclick="addToCart('product3')">Add to Cart</button>
+      <button type="submit" onclick="addToCart()">Add to Cart</button>
     </form>
-    <h2>My Cart</h2>
-    <ul id="cart-items"></ul>
-    <button onclick="checkout()">Checkout</button>
-    <div id="checkout-screen" style="display: none;">
-      <h2>Thank you for your purchase!</h2>
-      <p>Your order has been placed and will be shipped to you soon.</p>
+    <br>
+    <div id="cartItems">
+      <!-- Cart items will be displayed here -->
     </div>
+    <br>
+    <button onclick="showEndScreen()">Checkout</button>
+    <br>
+    <div id="endScreen" style="display: none;">
+      <h2>Order Summary</h2>
+      <div id="orderItems">
+        <!-- Order items will be displayed here -->
+      </div>
+      <br>
+      <button onclick="purchase()">Purchase</button>
+    </div>
+    
     <script>
       var cart = [];
-      function addToCart(productId) {
-        var productName = document.getElementById(productId).value;
-        cart.push(productName);
-        var cartList = document.getElementById("cart-items");
-        var newItem = document.createElement("li");
-        newItem.innerHTML = productName;
-        cartList.appendChild(newItem);
-      }
-      function checkout() {
-        var checkoutScreen = document.getElementById("checkout-screen");
-        checkoutScreen.style.display = "block";
-      }
-    </script>
+
+      function addToCart() {
+    var itemName = document.getElementById("itemName").value;
+    var itemPrice = document.getElementById("itemPrice").value;
+    var item = { name: itemName, price: itemPrice };
+    cart.push(item);
+    displayCartItems();
+  }
+  
+  function displayCartItems() {
+    var cartItemsDiv = document.getElementById("cartItems");
+    cartItemsDiv.innerHTML = "";
+    for (var i = 0; i < cart.length; i++) {
+      cartItemsDiv.innerHTML += "<p>" + cart[i].name + " - $" + cart[i].price + "</p>";
+    }
+  }
+  
+  function showEndScreen() {
+    var endScreenDiv = document.getElementById("endScreen");
+    endScreenDiv.style.display = "block";
+    displayOrderItems();
+  }
+  
+  function displayOrderItems() {
+    var orderItemsDiv = document.getElementById("orderItems");
+    orderItemsDiv.innerHTML = "";
+    for (var i = 0; i < cart.length; i++) {
+      orderItemsDiv.innerHTML += "<p>" + cart[i].name + " - $" + cart[i].price + "</p>";
+    }
+  }
+  
+  function purchase() {
+    alert("Thank you for your purchase!");
+    cart = [];
+    displayCartItems();
+    var endScreenDiv = document.getElementById("endScreen");
+    endScreenDiv.style.display = "none";
+  }
+</script>
+
   </body>
 </html>
 
+<label for="select-menu">Select an option:</label>
 <select id="select-menu" name="select-menu">
-    <option value="option1">TONKA STRONG BLACK</option>
-    <option value="option2">TONKA STRONG BLUE</option>
-    <option value="option3">TONKA STRONG NAVY</option>
-    <option value="option4">TONKA STRONG BROWN</option>
-    <option value="option5">TONKA STRONG GREY</option>
-    <option value="option6">TONKA STRONG RED</option>
-  </select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
