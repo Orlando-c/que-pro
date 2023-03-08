@@ -1,6 +1,3 @@
----
-layout: post
----
 **AP World History**
 
 **Visiting Cities Along the Silk Roads**
