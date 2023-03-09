@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "displayName": "Stone",
+      "name": "stone",
+      "stackSize": 64
+    },
+    {
+      "id": 2,
+      "displayName": "Grass Block",
+      "name": "grass",
+      "stackSize": 64
+    },
+    {
+      "id": 3,
+      "displayName": "Dirt",
+      "name": "dirt",
+      "stackSize": 64
+    },
+    {
+      "id": 4,
+      "displayName": "Cobblestone",
+      "name": "cobblestone",
+      "stackSize": 64
+    },
+    {
+      "id": 5,
+      "displayName": "Wooden Planks",
+      "name": "planks",
+      "stackSize": 64
+    },
+    {
+      "id": 6,
+      "displayName": "Sapling",
+      "name": "sapling",
+      "stackSize": 64
+    },
+    {
+      "id": 7,
+      "displayName": "Bedrock",
+      "name": "bedrock",
+      "stackSize": 64
+    },
+    {
+      "id": 12,
+      "displayName": "Sand",
+      "name": "sand",
+      "stackSize": 64
+    },
+    {
+      "id": 13,
+      "displayName": "Gravel",
+      "name": "gravel",
+      "stackSize": 64
+    }
+    ]
