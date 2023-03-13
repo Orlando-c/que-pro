@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 ms to read
+      17 ms to read
     
 </span></p>
 
@@ -869,15 +869,6 @@ None
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/orlando-c/anaconda3/lib/python3.9/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version &gt;=1.16.5 and &lt;1.23.0 is required for this version of SciPy (detected version 1.24.2
-  warnings.warn(f&#34;A NumPy version &gt;={np_minversion} and &lt;{np_maxversion}&#34;
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Titanic Data
 Index([&#39;survived&#39;, &#39;pclass&#39;, &#39;sex&#39;, &#39;age&#39;, &#39;sibsp&#39;, &#39;parch&#39;, &#39;fare&#39;,
@@ -1306,6 +1297,121 @@ Please also refer to the documentation for alternative solver options:
 6   7        Bedrock      bedrock         64
 7  12           Sand         sand         64
 8  13         Gravel       gravel         64
+--First 10---------
+   id    displayName         name  stackSize
+0   1          Stone        stone         64
+1   2    Grass Block        grass         64
+2   3           Dirt         dirt         64
+3   4    Cobblestone  cobblestone         64
+4   5  Wooden Planks       planks         64
+5   6        Sapling      sapling         64
+6   7        Bedrock      bedrock         64
+7  12           Sand         sand         64
+8  13         Gravel       gravel         64
+--Last 10------
+   id    displayName         name  stackSize
+0   1          Stone        stone         64
+1   2    Grass Block        grass         64
+2   3           Dirt         dirt         64
+3   4    Cobblestone  cobblestone         64
+4   5  Wooden Planks       planks         64
+5   6        Sapling      sapling         64
+6   7        Bedrock      bedrock         64
+7  12           Sand         sand         64
+8  13         Gravel       gravel         64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--Duration Top 10---------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--Duration Bottom 10------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>--Duration Top 10---------
+   id    displayName         name  stackSize
+0   1          Stone        stone         64
+1   2    Grass Block        grass         64
+2   3           Dirt         dirt         64
+3   4    Cobblestone  cobblestone         64
+4   5  Wooden Planks       planks         64
+5   6        Sapling      sapling         64
+6   7        Bedrock      bedrock         64
+7  12           Sand         sand         64
+8  13         Gravel       gravel         64
+--Duration Bottom 10------
+   id    displayName         name  stackSize
+0   1          Stone        stone         64
+1   2    Grass Block        grass         64
+2   3           Dirt         dirt         64
+3   4    Cobblestone  cobblestone         64
+4   5  Wooden Planks       planks         64
+5   6        Sapling      sapling         64
+6   7        Bedrock      bedrock         64
+7  12           Sand         sand         64
+8  13         Gravel       gravel         64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>   id displayName    name  stackSize
+8  13      Gravel  gravel         64
+
+   id displayName   name  stackSize
+0   1       Stone  stone         64
 </pre>
 </div>
 </div>
