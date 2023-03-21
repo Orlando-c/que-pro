@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 ms to read
+      7 ms to read
     
 </span></p>
 
@@ -123,9 +123,6 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#Schema-of-Users-table-in-Sqlite.db">Schema of Users table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Reading-Users-table-in-Sqlite.db">Reading Users table in Sqlite.db </a></li>
-<li class="toc-entry toc-h2"><a href="#--What-is-a-connection-object?--After-you-google-it,-what-do-you-think-it-does?">- What is a connection object?  After you google it, what do you think it does? </a></li>
-<li class="toc-entry toc-h2"><a href="#--Same-for-cursor-object?">- Same for cursor object? </a></li>
-<li class="toc-entry toc-h2"><a href="#--Look-at-conn-object-and-cursor-object-in-VSCode-debugger.--What-attributes-are-in-the-object?">- Look at conn object and cursor object in VSCode debugger.  What attributes are in the object? </a></li>
 <li class="toc-entry toc-h2"><a href="#Create-a-new-User-in-table-in-Sqlite.db">Create a new User in table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Updating-a-User-in-table-in-Sqlite.db">Updating a User in table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Delete-a-User-in-table-in-Sqlite.db">Delete a User in table in Sqlite.db </a></li>
@@ -256,16 +253,19 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
-<h2 id="--What-is-a-connection-object?--After-you-google-it,-what-do-you-think-it-does?">
-<a class="anchor" href="#--What-is-a-connection-object?--After-you-google-it,-what-do-you-think-it-does?" aria-hidden="true"><span class="octicon octicon-link"></span></a>- What is a connection object?  After you google it, what do you think it does?<a class="anchor-link" href="#--What-is-a-connection-object?--After-you-google-it,-what-do-you-think-it-does?"> </a>
-</h2>
-<h2 id="--Same-for-cursor-object?">
-<a class="anchor" href="#--Same-for-cursor-object?" aria-hidden="true"><span class="octicon octicon-link"></span></a>- Same for cursor object?<a class="anchor-link" href="#--Same-for-cursor-object?"> </a>
-</h2>
-<h2 id="--Look-at-conn-object-and-cursor-object-in-VSCode-debugger.--What-attributes-are-in-the-object?">
-<a class="anchor" href="#--Look-at-conn-object-and-cursor-object-in-VSCode-debugger.--What-attributes-are-in-the-object?" aria-hidden="true"><span class="octicon octicon-link"></span></a>- Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<a class="anchor-link" href="#--Look-at-conn-object-and-cursor-object-in-VSCode-debugger.--What-attributes-are-in-the-object?"> </a>
-</h2>
 <ul>
+<li>What is a connection object?  After you google it, what do you think it does?<ul>
+<li>It facilitates us to have multiple separate working environments through the same connection to the database</li>
+</ul>
+</li>
+<li>Same for cursor object?<ul>
+<li>A data access object that can be used to either iterate over the set of rows in a table or insert new rows into a table</li>
+</ul>
+</li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<ul>
+<li>Access to tables and storages</li>
+</ul>
+</li>
 <li>Is "results" an object?  How do you know?<ul>
 <li>Yes because it is classified as schema in the table meaning it has a role/place in the table</li>
 </ul>
@@ -344,8 +344,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compare create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>This lesson executes the table better and it is more clear to use/read however in terms of storage, the previous lesson executes reading and storage of information better</li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<ul>
+<li>Somewhat yes. SQL INSERT grabs the information of the user but uses a different process to gather the information</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -430,7 +436,10 @@ window.onload = wrap_img;
 <li>Except happens when the requirment has not passed and it </li>
 </ul>
 </li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<ul>
+<li>Asking for a user's input so the table can be filled in with the correct and accurate information without any of it missing</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -498,7 +507,7 @@ window.onload = wrap_img;
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
 <li>Is DELETE a dangerous operation?  Why?<ul>
-<li>Yes because this is permanently removing information from the database and could potentially corrupt data</li>
+<li>Yes because this is permanently removing information from the database and could potentially corrupt data. Here it just prints "yoyve been hacked" if your password is shorter than 2 characters. </li>
 </ul>
 </li>
 <li>In the print statemements, what is the "f" and what does {uid} do?<ul>
