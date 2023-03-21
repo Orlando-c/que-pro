@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 ms to read
+      6 ms to read
     
 </span></p>
 
@@ -123,6 +123,9 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#Schema-of-Users-table-in-Sqlite.db">Schema of Users table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Reading-Users-table-in-Sqlite.db">Reading Users table in Sqlite.db </a></li>
+<li class="toc-entry toc-h2"><a href="#--What-is-a-connection-object?--After-you-google-it,-what-do-you-think-it-does?">- What is a connection object?  After you google it, what do you think it does? </a></li>
+<li class="toc-entry toc-h2"><a href="#--Same-for-cursor-object?">- Same for cursor object? </a></li>
+<li class="toc-entry toc-h2"><a href="#--Look-at-conn-object-and-cursor-object-in-VSCode-debugger.--What-attributes-are-in-the-object?">- Look at conn object and cursor object in VSCode debugger.  What attributes are in the object? </a></li>
 <li class="toc-entry toc-h2"><a href="#Create-a-new-User-in-table-in-Sqlite.db">Create a new User in table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Updating-a-User-in-table-in-Sqlite.db">Updating a User in table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Delete-a-User-in-table-in-Sqlite.db">Delete a User in table in Sqlite.db </a></li>
@@ -167,7 +170,7 @@ window.onload = wrap_img;
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
 
-<pre><code>- A plan in the form of 
+<pre><code>- The plan or design of a table
 </code></pre>
 <ul>
 <li>What is the purpose of identity Column in SQL database?<ul>
@@ -253,11 +256,20 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
+<h2 id="--What-is-a-connection-object?--After-you-google-it,-what-do-you-think-it-does?">
+<a class="anchor" href="#--What-is-a-connection-object?--After-you-google-it,-what-do-you-think-it-does?" aria-hidden="true"><span class="octicon octicon-link"></span></a>- What is a connection object?  After you google it, what do you think it does?<a class="anchor-link" href="#--What-is-a-connection-object?--After-you-google-it,-what-do-you-think-it-does?"> </a>
+</h2>
+<h2 id="--Same-for-cursor-object?">
+<a class="anchor" href="#--Same-for-cursor-object?" aria-hidden="true"><span class="octicon octicon-link"></span></a>- Same for cursor object?<a class="anchor-link" href="#--Same-for-cursor-object?"> </a>
+</h2>
+<h2 id="--Look-at-conn-object-and-cursor-object-in-VSCode-debugger.--What-attributes-are-in-the-object?">
+<a class="anchor" href="#--Look-at-conn-object-and-cursor-object-in-VSCode-debugger.--What-attributes-are-in-the-object?" aria-hidden="true"><span class="octicon octicon-link"></span></a>- Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<a class="anchor-link" href="#--Look-at-conn-object-and-cursor-object-in-VSCode-debugger.--What-attributes-are-in-the-object?"> </a>
+</h2>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>Is "results" an object?  How do you know?<ul>
+<li>Yes because it is classified as schema in the table meaning it has a role/place in the table</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -410,8 +422,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
+<li>What does the hacked part do?<ul>
+<li>Warns a user that their information may be comprimised</li>
+</ul>
+</li>
+<li>Explain try/except, when would except occur?<ul>
+<li>Except happens when the requirment has not passed and it </li>
+</ul>
+</li>
 <li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
@@ -479,8 +497,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>Yes because this is permanently removing information from the database and could potentially corrupt data</li>
+</ul>
+</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<ul>
+<li>The "f" is for function and the {uid} is what prints the uid or can be used in different situations</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -540,8 +564,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<ul>
+<li>The cell repeats because it is caled again after you have made a request for user interface reasons</li>
+</ul>
+</li>
+<li>Could you refactor this menu?  Make it work with a List?<ul>
+<li>Yes, the function can call from a specific list within a database</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
