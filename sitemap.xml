@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://orlando-c.github.io/que-pro/2022/01/30/CB.html</loc>
+<lastmod>2022-01-30T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>https://orlando-c.github.io/que-pro/frontend/binary</loc>
 <lastmod>2022-07-07T00:00:00-05:00</lastmod>
 </url>
@@ -129,6 +133,10 @@
 <lastmod>2023-01-13T00:00:00-06:00</lastmod>
 </url>
 <url>
+<loc>https://orlando-c.github.io/que-pro/2023/01/30/5.1-and-5.2-big-ideas.html</loc>
+<lastmod>2023-01-30T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>https://orlando-c.github.io/que-pro/2023/01/30/CB.html</loc>
 <lastmod>2023-01-30T00:00:00-06:00</lastmod>
 </url>
@@ -173,22 +181,6 @@
 <lastmod>2023-03-30T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://orlando-c.github.io/que-pro/2023/04/02/.1-and-5.2-big-ideas.html</loc>
-<lastmod>2023-04-02T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://orlando-c.github.io/que-pro/2023/04/02/API.html</loc>
-<lastmod>2023-04-02T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://orlando-c.github.io/que-pro/2023/04/02/CB.html</loc>
-<lastmod>2023-04-02T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://orlando-c.github.io/que-pro/2023/04/02/MCQ-test-corrections.html</loc>
-<lastmod>2023-04-02T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://orlando-c.github.io/que-pro/bio/</loc>
 </url>
 <url>
@@ -211,8 +203,5 @@
 </url>
 <url>
 <loc>https://orlando-c.github.io/que-pro/page3/</loc>
-</url>
-<url>
-<loc>https://orlando-c.github.io/que-pro/page4/</loc>
 </url>
 </urlset>
