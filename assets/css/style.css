@@ -427,35 +427,35 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: #a6d3ff !important; }
+html, body, input, textarea, select, button { color: #a6ffad !important; }
 
 /* Define the gradient colors */
 /* Add the gradient to the body background */
-body { background: linear-gradient(to bottom, #181816, #012464); }
+body { background: linear-gradient(to bottom, #181816, #006c19); }
 
 a { color: white !important; }
 
 a:hover { color: white !important; }
 
-.site-title, .site-title:visited, .site-nav, .page-link { color: #a6d3ff !important; }
+.site-title, .site-title:visited, .site-nav, .page-link { color: #a6ffad !important; }
 
 .site-nav { background-color: #181818; border-color: #181818; }
 
-* { scrollbar-color: #c2faff #181818; }
+* { scrollbar-color: #c2ffc3 #181818; }
 
 pre, code { border-color: #181818; background-color: #181818; }
 
 .page-description { color: #e3e3e3; }
 
-.post-meta { color: #a6d3ff; }
+.post-meta { color: #a6ffb8; }
 
 .post-content p, .post-content li { color: #e3e3e3; }
 
-.btn { background-color: #181818 !important; color: #a6d3ff !important; border-color: #181818 !important; }
+.btn { background-color: #181818 !important; color: #a6ffad !important; border-color: #181818 !important; }
 
 .btn:hover { background-color: #181818 !important; }
 
-table th { background-color: #181818; border-color: #181818; color: #a6d3ff; }
+table th { background-color: #181818; border-color: #181818; color: #a6ffad; }
 
 table td { background-color: rgba(255, 255, 255, 0.1); border-color: #181818; color: #e3e3e3; }
 
