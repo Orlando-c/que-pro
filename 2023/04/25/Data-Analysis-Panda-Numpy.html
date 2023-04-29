@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 ms to read
+      23 ms to read
     
 </span></p>
 
@@ -135,12 +135,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Indexing-and-manipulaton-of-data-through-lists.">Indexing and manipulaton of data through lists. </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#Pandas-Classes">Pandas Classes </a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#--Series">- Series </a></li>
-<li class="toc-entry toc-h2"><a href="#--Index">- Index </a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h1"><a href="#Pandas-Classes">Pandas Classes </a></li>
 <li class="toc-entry toc-h1"><a href="#PeriodIndex">PeriodIndex </a></li>
 <li class="toc-entry toc-h1"><a href="#Dataframe-Grouped-By">Dataframe Grouped By </a>
 <ul>
@@ -168,14 +163,12 @@ window.onload = wrap_img;
 <h1 id="Predictive-Analysis">
 <a class="anchor" href="#Predictive-Analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Predictive Analysis<a class="anchor-link" href="#Predictive-Analysis"> </a>
 </h1>
-<p>Predictive analysis is the use of <strong><strong>_</strong></strong>, data mining, and machine learning techniques to analyze current and historical data in order to make predictions about future events or behaviors. It involves identifying <strong><em>__</em></strong> and trends in data, and then using that information to forecast what is likely to happen in the future.</p>
+<p>Predictive analysis is the use of statistical, data mining, and machine learning techniques to analyze current and historical data in order to make predictions about future events or behaviors. It involves identifying patterns and trends in data, and then using that information to forecast what is likely to happen in the future.</p>
 <p>Predictive analysis is used in a wide range of applications, from forecasting sales and demand, to predicting customer behavior, to detecting fraudulent transactions. It involves collecting and analyzing data from a variety of sources, including historical data, customer data, financial data, and social media data, among others.</p>
 <p>The process of predictive analysis typically involves the following steps:</p>
 <ol>
 <li>Defining the problem and identifying the relevant data sources</li>
-<li>
-<hr>
-</li>
+<li>Collecting and organizing data</li>
 <li>Exploring and analyzing the data to identify patterns and trends</li>
 <li>Selecting an appropriate model or algorithm to use for predictions</li>
 <li>Training and validating the model using historical data</li>
@@ -183,7 +176,7 @@ window.onload = wrap_img;
 <li>Monitoring and evaluating the performance of the model over time</li>
 </ol>
 <p>Predictive analysis can help organizations make more informed decisions, improve efficiency, and gain a competitive advantage by leveraging insights from data.</p>
-<p>It is most commonly used in <strong><strong>__</strong></strong>, where workers try to predict which products would be most popular and try to advertise those products as much as possible, and also <strong><strong>___</strong></strong>, where algorithms analyze patterns and reveal prerequisites for diseases and suggest preventive treatment, predict the results of various treatments and choose the best option for each patient individually, and predict disease outbreaks and epidemics.</p>
+<p>It is most commonly used in retail, where workers try to predict which products would be most popular and try to advertise those products as much as possible, and also Healthcare, where algorithms analyze patterns and reveal prerequisites for diseases and suggest preventive treatment, predict the results of various treatments and choose the best option for each patient individually, and predict disease outbreaks and epidemics.</p>
 
 </div>
 </div>
@@ -194,7 +187,7 @@ window.onload = wrap_img;
 <h1 id="1.-Intro-to-NumPy-and-the-features-it-consists">
 <a class="anchor" href="#1.-Intro-to-NumPy-and-the-features-it-consists" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Intro to NumPy and the features it consists<a class="anchor-link" href="#1.-Intro-to-NumPy-and-the-features-it-consists"> </a>
 </h1>
-<p>Numpy, by definition, is the fundamental package for scientific computing in Python which can be used to perform mathematical operations, provide <strong><strong><strong>__</strong></strong></strong>, and makes <strong><strong><em>__</em></strong></strong> much <strong><em>__</em></strong>. Numpy is very important and useful when it comes to data analysis, as it can easily use its features to complete and perform any mathematical operation, as well as analyze data files.</p>
+<p>Numpy, by definition, is the fundamental package for scientific computing in Python which can be used to perform mathematical operations, provide multidimensional array objects, and makes data analysis much easier. Numpy is very important and useful when it comes to data analysis, as it can easily use its features to complete and perform any mathematical operation, as well as analyze data files.</p>
 <p>If you don't already have numpy installed, you can do so using <code>conda install numpy</code> or <code>pip install numpy</code></p>
 <p>Once that is complete, to import numpy in your code, all you must do is:</p>
 
@@ -591,8 +584,18 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">prod</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Entrar numbero uno"</span><span class="p">))</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Entrar numbero dos"</span><span class="p">))</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'numberos'</span><span class="p">:</span> <span class="p">[</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">]})</span>
+
+<span class="c1"># calc sum</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'numberos'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># result</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The sum of </span><span class="si">{</span><span class="n">num1</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">num2</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -605,23 +608,8 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>6
+<pre>The sum of 1 and 2 is 3
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[20], line 3</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> # create a different way of solving the sum or products of a dataset from what we learned above
-<span class="ansi-green-intense-fg ansi-bold">      2</span> print(sum(a))
-<span class="ansi-green-fg">----&gt; 3</span> print(prod(b))
-
-<span class="ansi-red-fg">NameError</span>: name 'prod' is not defined</pre>
 </div>
 </div>
 
@@ -945,13 +933,15 @@ dtype: float64
 <a class="anchor" href="#Pandas-Classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pandas Classes<a class="anchor-link" href="#Pandas-Classes"> </a>
 </h1>
 <p>Within pandas the library consits of a lot of functions which allow you to manipulate datasets in lists dictionsaries and csv files here are some of the ones we are going to cover (hint: take notes on these)</p>
-<h2 id="--Series">
-<a class="anchor" href="#--Series" aria-hidden="true"><span class="octicon octicon-link"></span></a>- Series<a class="anchor-link" href="#--Series"> </a>
-</h2>
-<h2 id="--Index">
-<a class="anchor" href="#--Index" aria-hidden="true"><span class="octicon octicon-link"></span></a>- Index<a class="anchor-link" href="#--Index"> </a>
-</h2>
 <ul>
+<li>Series<ul>
+<li>Series of indexes, list, dict, etc</li>
+</ul>
+</li>
+<li>Index<ul>
+<li>A specific element in a list</li>
+</ul>
+</li>
 <li>PeriodIndex<ul>
 <li>Repeat within a certain index and ability to sort</li>
 </ul>
@@ -1474,10 +1464,361 @@ total_rooms
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">first_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Orlando'</span><span class="p">,</span> <span class="s1">'Soham'</span><span class="p">,</span> <span class="s1">'Colin'</span><span class="p">,</span> <span class="s1">'James'</span><span class="p">,</span> <span class="s1">'Ethan'</span><span class="p">,</span> <span class="s1">'Emily'</span><span class="p">,</span> <span class="s1">'Harvard'</span><span class="p">,</span> <span class="s1">'Joe'</span><span class="p">,</span> <span class="s1">'Sleepy'</span><span class="p">,</span> <span class="s1">'Sleepy Joe'</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">,</span> <span class="s1">'Your Mom'</span><span class="p">,</span> <span class="s1">'Collin'</span><span class="p">,</span> <span class="s1">'Max'</span><span class="p">,</span> <span class="s1">'Bartholomew'</span><span class="p">,</span> <span class="s1">'Joel'</span><span class="p">,</span> <span class="s1">'Ava'</span><span class="p">,</span> <span class="s1">'Oliver'</span><span class="p">,</span> <span class="s1">'Charlotte'</span><span class="p">,</span> <span class="s1">'Lucas'</span><span class="p">,</span> <span class="s1">'Harper'</span><span class="p">,</span> <span class="s1">'Mason'</span><span class="p">,</span> <span class="s1">'Amelia'</span><span class="p">,</span> <span class="s1">'Evelyn'</span><span class="p">,</span> <span class="s1">'Logan'</span><span class="p">,</span> <span class="s1">'Ella'</span><span class="p">,</span> <span class="s1">'Joseph'</span><span class="p">,</span> <span class="s1">'Liam'</span><span class="p">,</span> <span class="s1">'Connor'</span><span class="p">,</span> <span class="s1">'Abby'</span><span class="p">,</span> <span class="s1">'Austin'</span><span class="p">,</span> <span class="s1">'Avery'</span><span class="p">,</span> <span class="s1">'Bryce'</span><span class="p">,</span> <span class="s1">'Camila'</span><span class="p">,</span> <span class="s1">'Carter'</span><span class="p">,</span> <span class="s1">'Charlotte'</span><span class="p">,</span> <span class="s1">'Eli'</span><span class="p">,</span> <span class="s1">'Ella'</span><span class="p">,</span> <span class="s1">'Emma'</span><span class="p">,</span> <span class="s1">'Grace'</span><span class="p">,</span> <span class="s1">'Hazel'</span><span class="p">,</span> <span class="s1">'Isaac'</span><span class="p">,</span> <span class="s1">'Jade'</span><span class="p">,</span> <span class="s1">'Jaxon'</span><span class="p">,</span> <span class="s1">'Jocelyn'</span><span class="p">,</span> <span class="s1">'Levi'</span><span class="p">,</span> <span class="s1">'Lila'</span><span class="p">,</span> <span class="s1">'Liliana'</span><span class="p">,</span> <span class="s1">'Mia'</span><span class="p">,</span> <span class="s1">'Mila'</span><span class="p">,</span> <span class="s1">'Natalie'</span><span class="p">,</span> <span class="s1">'Oliver'</span><span class="p">,</span> <span class="s1">'Piper'</span><span class="p">,</span> <span class="s1">'Sebastian'</span><span class="p">,</span> <span class="s1">'Jillian'</span><span class="p">,]</span>
+<span class="n">last_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Smith'</span><span class="p">,</span> <span class="s1">'Johnson'</span><span class="p">,</span> <span class="s1">'Williams'</span><span class="p">,</span> <span class="s1">'Brown'</span><span class="p">,</span> <span class="s1">'Jones'</span><span class="p">,</span> <span class="s1">'Carcamo'</span><span class="p">,</span> <span class="s1">'Weis'</span><span class="p">,</span> <span class="s1">'Kamat'</span><span class="p">,</span> <span class="s1">'Joe'</span><span class="p">,</span> <span class="s1">'Biden'</span><span class="p">,</span> <span class="s1">'Ward'</span><span class="p">,</span> <span class="s1">'Campbell'</span><span class="p">,</span> <span class="s1">'Gonzalez'</span><span class="p">,</span> <span class="s1">'Bailey'</span><span class="p">,</span> <span class="s1">'Bennett'</span><span class="p">,</span> <span class="s1">'Wong'</span><span class="p">,</span> <span class="s1">'Perry'</span><span class="p">,</span> <span class="s1">'Ross'</span><span class="p">,</span> <span class="s1">'Dixon'</span><span class="p">,</span> <span class="s1">'Morgan'</span><span class="p">,</span> <span class="s1">'Owens'</span><span class="p">,</span> <span class="s1">'Harris'</span><span class="p">,</span> <span class="s1">'Lopez'</span><span class="p">,</span> <span class="s1">'Foster'</span><span class="p">,</span> <span class="s1">'Chambers'</span><span class="p">,</span> <span class="s1">'Hayes'</span><span class="p">,</span> <span class="s1">'Porter'</span><span class="p">,</span> <span class="s1">'Peters'</span><span class="p">,</span> <span class="s1">'Sullivan'</span><span class="p">,</span> <span class="s1">'Wright'</span><span class="p">,</span> <span class="s1">'Edwards'</span><span class="p">,</span> <span class="s1">'Mitchell'</span><span class="p">,</span> <span class="s1">'Esteban'</span><span class="p">,</span> <span class="s1">'Cox'</span><span class="p">,</span> <span class="s1">'Hill'</span><span class="p">,</span> <span class="s1">'Harper'</span><span class="p">,</span> <span class="s1">'Ceja'</span><span class="p">,</span> <span class="s1">'Jr'</span><span class="p">,</span> <span class="s1">'The III'</span><span class="p">,</span> <span class="s1">'The II'</span><span class="p">,</span> <span class="s1">'The IIII'</span><span class="p">,</span> <span class="s1">'The IIIII'</span><span class="p">]</span>
+<span class="n">professions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Doctor'</span><span class="p">,</span> <span class="s1">'Heart Seller'</span><span class="p">,</span> <span class="s1">'Professional Coach'</span><span class="p">,</span> <span class="s1">'Lifeguard'</span><span class="p">,</span> <span class="s1">'Astronaut'</span><span class="p">,</span> <span class="s1">'Robotics Engineer'</span><span class="p">,</span> <span class="s1">'Artificial Intelligence Developer'</span><span class="p">,</span> <span class="s1">'Magician'</span><span class="p">,</span> <span class="s1">'Firefighter'</span><span class="p">,</span> <span class="s1">'Astrologer'</span><span class="p">,</span> <span class="s1">'Barista'</span><span class="p">,</span> <span class="s1">'Psychiatrist'</span><span class="p">,</span> <span class="s1">'Crime Scene Investigator'</span><span class="p">,</span> <span class="s1">'Private Investigator'</span><span class="p">,</span> <span class="s1">'Dog Walker'</span><span class="p">,</span> <span class="s1">'Chocolatier'</span><span class="p">,</span> <span class="s1">'Cartoonist'</span><span class="p">,</span> <span class="s1">'Meteorologist'</span><span class="p">,</span> <span class="s1">'Circus Performer'</span><span class="p">,</span> <span class="s1">'Graphic Designer'</span><span class="p">,</span> <span class="s1">'Fashion Designer'</span><span class="p">,</span> <span class="s1">'Musician'</span><span class="p">,</span> <span class="s1">'Professional Gamer'</span><span class="p">,</span> <span class="s1">'Baker'</span><span class="p">,</span> <span class="s1">'Stand-up Comedian'</span><span class="p">,</span> <span class="s1">'Movie Director'</span><span class="p">,</span> <span class="s1">'Gardener'</span><span class="p">,</span> <span class="s1">'Event Planner'</span><span class="p">,</span> <span class="s1">'Archaeologist'</span><span class="p">,</span> <span class="s1">'Translator'</span><span class="p">,</span> <span class="s1">'Social Media Influencer'</span><span class="p">,</span> <span class="s1">'Fitness Trainer'</span><span class="p">,</span> <span class="s1">'Mechanic'</span><span class="p">,</span> <span class="s1">'Chef'</span><span class="p">,</span> <span class="s1">'Hair Stylist'</span><span class="p">,</span> <span class="s1">'Mortician'</span><span class="p">,</span> <span class="s1">'Wine Sommelier'</span><span class="p">,</span> <span class="s1">'Surgeon'</span><span class="p">,</span> <span class="s1">'Yoga Instructor'</span><span class="p">,</span> <span class="s1">'Author'</span><span class="p">,</span> <span class="s1">'Interior Designer'</span><span class="p">,</span> <span class="s1">'Tattoo Artist'</span><span class="p">,</span> <span class="s1">'Pilot'</span><span class="p">,</span> <span class="s1">'Magistrate'</span><span class="p">,</span> <span class="s1">'Historian'</span><span class="p">,</span> <span class="s1">'Art Dealer'</span><span class="p">,</span> <span class="s1">'Cartographer'</span><span class="p">,</span> <span class="s1">'Acrobat'</span><span class="p">,</span> <span class="s1">'Paranormal Investigator'</span><span class="p">,</span> <span class="s1">'Professional Border Hopper'</span><span class="p">,</span> <span class="s1">'Taco Muncher'</span><span class="p">,</span> <span class="s1">'Horchata Slurper'</span><span class="p">,</span> <span class="s1">'Traditional Curry Chomper'</span><span class="p">,</span> <span class="s1">'Professional "Mom" investigator'</span><span class="p">,</span> <span class="s1">'School Shooter'</span><span class="p">,</span> <span class="s1">'Obesity Lord'</span><span class="p">,</span> <span class="p">]</span>
+
+<span class="c1"># Create a DataFrame with randomized first names, last names, hours of work, and professions</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s1">'first_name'</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">first_names</span><span class="p">),</span>
+        <span class="s1">'last_name'</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">last_names</span><span class="p">),</span>
+        <span class="s1">'age'</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span>
+        <span class="s1">'salary'</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">20000</span><span class="p">,</span> <span class="mi">250000</span><span class="p">),</span>
+        <span class="s1">'profession'</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">professions</span><span class="p">)</span>
+    <span class="p">})</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'goofy.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>   first_name  last_name  age  salary                  profession
+0     Orlando     Morgan   26  129306  Professional Border Hopper
+1      Evelyn       Weis   25  233457               Archaeologist
+2     Natalie     Harper   95  145172                Obesity Lord
+3     Harvard     Porter   55    6619                Hair Stylist
+4      Carter    Esteban   93  131439   Traditional Curry Chomper
+..        ...        ...  ...     ...                         ...
+95       Jade        Cox   22  182905    Crime Scene Investigator
+96       Abby   The IIII   29  131219                     Surgeon
+97        Max  The IIIII   88  115416                Hair Stylist
+98     Sleepy   Gonzalez   85   20450                        Chef
+99       Liam    The III   49  198129          Professional Gamer
+
+[100 rows x 5 columns]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'goofy.csv'</span><span class="p">)</span>
+
+<span class="n">max_age</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'age'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">min_age</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'age'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">avg_age</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'age'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">max_salary</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'salary'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">min_salary</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'salary'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">avg_salary</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'salary'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">most_common_profession</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'profession'</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">most_common_fn</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'first_name'</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">most_common_ln</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'last_name'</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Max age - </span><span class="si">{</span><span class="n">max_age</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Min age - </span><span class="si">{</span><span class="n">min_age</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average age - </span><span class="si">{</span><span class="n">avg_age</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Max salary - </span><span class="si">{</span><span class="n">max_salary</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Min salary - </span><span class="si">{</span><span class="n">min_salary</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average salary - </span><span class="si">{</span><span class="n">avg_salary</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Most common profession - </span><span class="si">{</span><span class="n">most_common_profession</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Most common first name - </span><span class="si">{</span><span class="n">most_common_fn</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Most common last name - </span><span class="si">{</span><span class="n">most_common_ln</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Max age - 120
+Min age - 2
+Average age - 64.42
+Max salary - 247410
+Min salary - -16787
+Average salary - 107696.13
+Most common profession - Interior Designer
+Most common first name - Emily
+Most common last name - Mitchell
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+
+<span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">random_list</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[43 36 46 47 46 25 33 44 37 30]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">max_num</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+
+<span class="n">square</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">max_num</span><span class="p">))</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="n">triple_d_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">square</span><span class="p">,</span> <span class="n">square</span><span class="p">,</span> <span class="n">square</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">triple_d_array</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ ...
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">linear_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="n">square</span> <span class="o">**</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">square</span><span class="p">,</span> <span class="n">square</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">linear_array</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[[0.00000000e+00 2.14339299e-05 4.28678598e-05 ... 7.07319687e-04
+   7.28753617e-04 7.50187547e-04]
+  [7.71621477e-04 7.93055407e-04 8.14489337e-04 ... 1.47894116e-03
+   1.50037509e-03 1.52180902e-03]
+  [1.54324295e-03 1.56467688e-03 1.58611081e-03 ... 2.25056264e-03
+   2.27199657e-03 2.29343050e-03]
+  ...
+  [2.54635087e-02 2.54849427e-02 2.55063766e-02 ... 2.61708284e-02
+   2.61922624e-02 2.62136963e-02]
+  [2.62351302e-02 2.62565641e-02 2.62779981e-02 ... 2.69424499e-02
+   2.69638838e-02 2.69853178e-02]
+  [2.70067517e-02 2.70281856e-02 2.70496195e-02 ... 2.77140714e-02
+   2.77355053e-02 2.77569392e-02]]
+
+ [[2.77783732e-02 2.77998071e-02 2.78212410e-02 ... 2.84856929e-02
+   2.85071268e-02 2.85285607e-02]
+  [2.85499946e-02 2.85714286e-02 2.85928625e-02 ... 2.92573143e-02
+   2.92787483e-02 2.93001822e-02]
+  [2.93216161e-02 2.93430500e-02 2.93644840e-02 ... 3.00289358e-02
+   3.00503697e-02 3.00718037e-02]
+  ...
+  [5.32418819e-02 5.32633158e-02 5.32847498e-02 ... 5.39492016e-02
+   5.39706355e-02 5.39920694e-02]
+  [5.40135034e-02 5.40349373e-02 5.40563712e-02 ... 5.47208231e-02
+   5.47422570e-02 5.47636909e-02]
+  [5.47851249e-02 5.48065588e-02 5.48279927e-02 ... 5.54924445e-02
+   5.55138785e-02 5.55353124e-02]]
+
+ [[5.55567463e-02 5.55781803e-02 5.55996142e-02 ... 5.62640660e-02
+   5.62854999e-02 5.63069339e-02]
+  [5.63283678e-02 5.63498017e-02 5.63712357e-02 ... 5.70356875e-02
+   5.70571214e-02 5.70785554e-02]
+  [5.70999893e-02 5.71214232e-02 5.71428571e-02 ... 5.78073090e-02
+   5.78287429e-02 5.78501768e-02]
+  ...
+  [8.10202551e-02 8.10416890e-02 8.10631229e-02 ... 8.17275748e-02
+   8.17490087e-02 8.17704426e-02]
+  [8.17918765e-02 8.18133105e-02 8.18347444e-02 ... 8.24991962e-02
+   8.25206302e-02 8.25420641e-02]
+  [8.25634980e-02 8.25849319e-02 8.26063659e-02 ... 8.32708177e-02
+   8.32922516e-02 8.33136856e-02]]
+
+ ...
+
+ [[9.16686314e-01 9.16707748e-01 9.16729182e-01 ... 9.17393634e-01
+   9.17415068e-01 9.17436502e-01]
+  [9.17457936e-01 9.17479370e-01 9.17500804e-01 ... 9.18165256e-01
+   9.18186690e-01 9.18208123e-01]
+  [9.18229557e-01 9.18250991e-01 9.18272425e-01 ... 9.18936877e-01
+   9.18958311e-01 9.18979745e-01]
+  ...
+  [9.42149823e-01 9.42171257e-01 9.42192691e-01 ... 9.42857143e-01
+   9.42878577e-01 9.42900011e-01]
+  [9.42921445e-01 9.42942879e-01 9.42964313e-01 ... 9.43628764e-01
+   9.43650198e-01 9.43671632e-01]
+  [9.43693066e-01 9.43714500e-01 9.43735934e-01 ... 9.44400386e-01
+   9.44421820e-01 9.44443254e-01]]
+
+ [[9.44464688e-01 9.44486122e-01 9.44507555e-01 ... 9.45172007e-01
+   9.45193441e-01 9.45214875e-01]
+  [9.45236309e-01 9.45257743e-01 9.45279177e-01 ... 9.45943629e-01
+   9.45965063e-01 9.45986497e-01]
+  [9.46007931e-01 9.46029364e-01 9.46050798e-01 ... 9.46715250e-01
+   9.46736684e-01 9.46758118e-01]
+  ...
+  [9.69928196e-01 9.69949630e-01 9.69971064e-01 ... 9.70635516e-01
+   9.70656950e-01 9.70678384e-01]
+  [9.70699818e-01 9.70721252e-01 9.70742686e-01 ... 9.71407137e-01
+   9.71428571e-01 9.71450005e-01]
+  [9.71471439e-01 9.71492873e-01 9.71514307e-01 ... 9.72178759e-01
+   9.72200193e-01 9.72221627e-01]]
+
+ [[9.72243061e-01 9.72264495e-01 9.72285929e-01 ... 9.72950380e-01
+   9.72971814e-01 9.72993248e-01]
+  [9.73014682e-01 9.73036116e-01 9.73057550e-01 ... 9.73722002e-01
+   9.73743436e-01 9.73764870e-01]
+  [9.73786304e-01 9.73807738e-01 9.73829172e-01 ... 9.74493623e-01
+   9.74515057e-01 9.74536491e-01]
+  ...
+  [9.97706569e-01 9.97728003e-01 9.97749437e-01 ... 9.98413889e-01
+   9.98435323e-01 9.98456757e-01]
+  [9.98478191e-01 9.98499625e-01 9.98521059e-01 ... 9.99185511e-01
+   9.99206945e-01 9.99228379e-01]
+  [9.99249812e-01 9.99271246e-01 9.99292680e-01 ... 9.99957132e-01
+   9.99978566e-01 1.00000000e+00]]]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1492,9 +1833,24 @@ total_rooms
 </h1>
 <p>The grading will be binary - all or nothing; no partial credit</p>
 <ul>
-<li>0.3 for all the popcorn hacks</li>
-<li>0.6 for the main hack - CSV file</li>
-<li>0.1 for going above and beyond in the main hack</li>
+<li>0.3 for all the popcorn hacks<blockquote>
+<ul>
+<li>done-erino</li>
+</ul>
+</blockquote>
+</li>
+<li>0.6 for the main hack - CSV file<blockquote>
+<ul>
+<li>Picasso is finished</li>
+</ul>
+</blockquote>
+</li>
+<li>0.1 for going above and beyond in the main hack<blockquote>
+<ul>
+<li>I mean look at the picasso</li>
+</ul>
+</blockquote>
+</li>
 </ul>
 
 </div>
