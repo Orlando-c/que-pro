@@ -277,7 +277,7 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Better Call Saul has been added to the list of movies.
+<pre> has been added to the list of movies.
 </pre>
 </div>
 </div>
@@ -330,7 +330,7 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1. Breaking Bad, 1594, 3, English, https://ricekrispies.com, Snap, Crackle, Pop
+<pre>1. The Mandalorian, 2023, 18, English, , 
 </pre>
 </div>
 </div>
@@ -565,6 +565,8 @@ Delete: Option for deleting every film, also takes in a name to delete that film
         <span class="s2">"id"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"id"</span><span class="p">],</span>
         <span class="s2">"title"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"titleText"</span><span class="p">][</span><span class="s2">"text"</span><span class="p">],</span>
         <span class="s2">"release_year"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"releaseYear"</span><span class="p">][</span><span class="s2">"year"</span><span class="p">],</span>
+        <span class="s2">"caption"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"titleText"</span><span class="p">][</span><span class="s2">"text"</span><span class="p">],</span>
+        
     <span class="p">}</span>
     <span class="n">entries</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
 
@@ -588,17 +590,29 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>          id                                    title  release_year
-0  tt0001922                That Winsome Winnie Smile          1911
-1  tt0001539                             Caïn et Abel          1911
-2  tt0001636                                  Galileo          1911
-3  tt0002148                   The Drummer's Vacation          1912
-4  tt0001702               The Indian Maiden's Lesson          1911
-5  tt0001856             The Revenue Man and the Girl          1911
-6  tt0001790  Les misérables - Époque 1: Jean Valjean          1913
-7  tt0000543                 Christian IXS bisættelse          1906
-8  tt0002089                                   Carmen          1912
-9  tt0000548                       Fiskerliv i Norden          1906
+<pre>          id                                    title  release_year  \
+0  tt0001922                That Winsome Winnie Smile          1911   
+1  tt0001539                             Caïn et Abel          1911   
+2  tt0001636                                  Galileo          1911   
+3  tt0002148                   The Drummer's Vacation          1912   
+4  tt0001702               The Indian Maiden's Lesson          1911   
+5  tt0001856             The Revenue Man and the Girl          1911   
+6  tt0001790  Les misérables - Époque 1: Jean Valjean          1913   
+7  tt0000543                 Christian IXS bisættelse          1906   
+8  tt0002089                                   Carmen          1912   
+9  tt0000548                       Fiskerliv i Norden          1906   
+
+                                   caption  
+0                That Winsome Winnie Smile  
+1                             Caïn et Abel  
+2                                  Galileo  
+3                   The Drummer's Vacation  
+4               The Indian Maiden's Lesson  
+5             The Revenue Man and the Girl  
+6  Les misérables - Époque 1: Jean Valjean  
+7                 Christian IXS bisættelse  
+8                                   Carmen  
+9                       Fiskerliv i Norden  
 </pre>
 </div>
 </div>
@@ -652,6 +666,30 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 <li>Create a Fetch API request for your corresponding API</li>
 <li>Attempt a complete website on GitHub Pages including HTML</li>
 </ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Important Notes</p>
+<ul>
+<li>CRUD<ul>
+<li>Create, Read, Update, Delete</li>
+<li>Getter Setter methods</li>
+<li>API</li>
+<li>Convert information to frontend<ul>
+<li>Embed conversion</li>
+</ul>
+</li>
+<li>Fetching<ul>
+<li>Requesting information/data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
