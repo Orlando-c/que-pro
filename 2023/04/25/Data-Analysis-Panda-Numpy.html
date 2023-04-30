@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      23 ms to read
+      21 ms to read
     
 </span></p>
 
@@ -1078,7 +1078,7 @@ dtype: float64
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
 
-<span class="n">grouped</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Category'</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span> <span class="c1">#GUESS WHAT THIS WOULD BE IF WE WERE LOOKING FOR COMBINED TOTALS!()</span>
+<span class="n">grouped</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Category'</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span> <span class="c1">#GUESS WHAT THIS WOULD BE IF WE WERE LOOKING FOR COMBINED TOTALS!(SUM)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">grouped</span><span class="p">)</span>
 </pre></div>
@@ -1234,6 +1234,7 @@ Categories (3, object): ['yellow', 'orange', 'blue']
 <li>Jose Azocar, OF, .257, 0, 10, .630, 28</li>
 </ul>
 <p>QUESTION: WHAT DO YOU GUYS THINK THE INDEX FOR THIS WOULD BE?</p>
+<p>The name of the player</p>
 
 </div>
 </div>
@@ -1242,6 +1243,7 @@ Categories (3, object): ['yellow', 'orange', 'blue']
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Can you explain what is going on in this code segment below. (hint: define what ascending= false means, and df. head means)</p>
+<p>The code below is sorting the top players and the worst players then prints them</p>
 
 </div>
 </div>
@@ -1371,6 +1373,7 @@ Name: total_rooms, dtype: float64
 
 <span class="c1"># WHAT DO YOU GUYS THINK df.agg means in context of pandas and what does it stand for.</span>
 
+<span class="c1"># I believe it means aggregrate and combines a series of function names to be called</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">agg_df</span><span class="p">)</span>
 </pre></div>
@@ -1498,18 +1501,18 @@ total_rooms
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>   first_name  last_name  age  salary                  profession
-0     Orlando     Morgan   26  129306  Professional Border Hopper
-1      Evelyn       Weis   25  233457               Archaeologist
-2     Natalie     Harper   95  145172                Obesity Lord
-3     Harvard     Porter   55    6619                Hair Stylist
-4      Carter    Esteban   93  131439   Traditional Curry Chomper
-..        ...        ...  ...     ...                         ...
-95       Jade        Cox   22  182905    Crime Scene Investigator
-96       Abby   The IIII   29  131219                     Surgeon
-97        Max  The IIIII   88  115416                Hair Stylist
-98     Sleepy   Gonzalez   85   20450                        Chef
-99       Liam    The III   49  198129          Professional Gamer
+<pre>   first_name last_name  age  salary                  profession
+0       Logan     Jones   64  108532                   Lifeguard
+1        Ella  Williams   84   41134          Professional Gamer
+2      Oliver   Esteban  117   31962                     Barista
+3        Ella      Ward   79  179055                   Astronaut
+4      Oliver    Porter   39  -16603                    Gardener
+..        ...       ...  ...     ...                         ...
+95    Jocelyn   Edwards   68  112706     Social Media Influencer
+96      Isaac  Gonzalez   46   67450  Professional Border Hopper
+97       Mila   Carcamo   14  124863                   Astronaut
+98       Liam  Williams   98  211082             Yoga Instructor
+99     Evelyn     Hayes   24  128671   Traditional Curry Chomper
 
 [100 rows x 5 columns]
 </pre>
@@ -1566,15 +1569,15 @@ total_rooms
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Max age - 120
-Min age - 2
-Average age - 64.42
-Max salary - 247410
-Min salary - -16787
-Average salary - 107696.13
-Most common profession - Interior Designer
-Most common first name - Emily
-Most common last name - Mitchell
+<pre>Max age - 119
+Min age - 1
+Average age - 57.88
+Max salary - 249686
+Min salary - -16603
+Average salary - 102676.80
+Most common profession - Social Media Influencer
+Most common first name - Charlotte
+Most common last name - Carcamo
 </pre>
 </div>
 </div>
@@ -1612,7 +1615,7 @@ Most common last name - Mitchell
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[43 36 46 47 46 25 33 44 37 30]
+<pre>[39 39 21 32 11 37 41 47 30 28]
 </pre>
 </div>
 </div>
@@ -1635,73 +1638,9 @@ Most common last name - Mitchell
 <span class="n">square</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">max_num</span><span class="p">))</span> <span class="o">**</span> <span class="mi">2</span>
 
 <span class="n">triple_d_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">square</span><span class="p">,</span> <span class="n">square</span><span class="p">,</span> <span class="n">square</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">triple_d_array</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[[[0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  ...
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]]
-
- [[0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  ...
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]]
-
- [[0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  ...
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]]
-
- ...
-
- [[0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  ...
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]]
-
- [[0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  ...
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]]
-
- [[0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  ...
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]]]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
