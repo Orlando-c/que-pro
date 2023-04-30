@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      25 ms to read
+      27 ms to read
     
 </span></p>
 
@@ -250,7 +250,10 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Answer the following questions about the code block below:</p>
 <ul>
-<li>Why do you think lists are helpful? What word does College Board like to use to describe the function of lists?</li>
+<li>Why do you think lists are helpful? What word does College Board like to use to describe the function of lists?<ul>
+<li>Lists are important because you are able to store bits of information quickly and easily and youa re able to use that list and call for an index. </li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -436,14 +439,13 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 <h1 id="Selection">
 <a class="anchor" href="#Selection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selection<a class="anchor-link" href="#Selection"> </a>
 </h1>
-<p>Selection refers to the process of <strong>__</strong> in a program based on certain conditions. It is normally done with conditional statements.</p>
+<p>Selection refers to the process of making decisions in a program based on certain conditions. It is normally done with conditional statements.</p>
 <h2 id="Conditionals">
 <a class="anchor" href="#Conditionals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conditionals<a class="anchor-link" href="#Conditionals"> </a>
 </h2>
 <p>What is a conditional?:</p>
 <ul>
-<li>Statement that allows code to execute different instructions if a certain condition is <strong><strong>_</strong></strong>
-</li>
+<li>Statement that allows code to execute different instructions if a certain condition is true or false</li>
 <li>Allows program to make decisions based on data and input</li>
 </ul>
 <p>What are the main types of conditional statements?:</p>
@@ -511,7 +513,7 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 <a class="anchor" href="#Elif" aria-hidden="true"><span class="octicon octicon-link"></span></a>Elif<a class="anchor-link" href="#Elif"> </a>
 </h3>
 <ul>
-<li>The elif statement can check <strong>___</strong> conditions in a sequence, and execute a certain block of code if any of the conditions are true. </li>
+<li>The elif statement can check multiple conditions in a sequence, and execute a certain block of code if any of the conditions are true. </li>
 <li>
 <p>If (condition) then (consequence A), elif (condition) then (consequence B), else (consequence C)</p>
 </li>
@@ -568,7 +570,7 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 </h2>
 <p>What is a nested conditional?:</p>
 <ul>
-<li>Conditional statement inside another <strong>___</strong> statement</li>
+<li>Conditional statement inside another conditional statement</li>
 <li>Allows to check for more complex condition where one condition depends on another</li>
 </ul>
 <h3 id="Nested-Conditional-Statements">
@@ -628,7 +630,7 @@ x is divisible by 3
 <h2 id="Indentation">
 <a class="anchor" href="#Indentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Indentation<a class="anchor-link" href="#Indentation"> </a>
 </h2>
-<p>When using conditionals and nested conditionals in Python, it is important to pay attention to the <strong><strong><strong>___</strong></strong></strong> in the code. The code inside the if, elif, and else blocks must be indented so they are nested wihtin the outer statements. This way, Python knows which code belongs to which block.</p>
+<p>When using conditionals and nested conditionals in Python, it is important to pay attention to the level of indentation in the code. The code inside the if, elif, and else blocks must be indented so they are nested wihtin the outer statements. This way, Python knows which code belongs to which block.</p>
 
 </div>
 </div>
@@ -640,13 +642,13 @@ x is divisible by 3
 <a class="anchor" href="#Binary-Search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Search<a class="anchor-link" href="#Binary-Search"> </a>
 </h2>
 <p>What is binary search and what is it used for?:</p>
-<hr>
 <ul>
+<li>Searching algorithm</li>
 <li>Find and select a specific element in a sorted list of elements</li>
 </ul>
 <p>How does binary search work?:</p>
 <ul>
-<li>Repeatedly divides the search interval in half to find the middle element and <strong>__</strong> the middle value to the target value, if not the same then it continues on to either the lower or upper half</li>
+<li>Repeatedly divides the search interval in half to find the middle element and compares the middle value to the target value, if not the same then it continues on to either the lower or upper half</li>
 <li>Eliminate half of the remaining search interval elements each time</li>
 <li>Efficient way to search for element in large dataset</li>
 </ul>
@@ -770,10 +772,49 @@ Is your number 2?
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">higher_or_lower</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome to Higher or Lower!"</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">current_card</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The current card is: </span><span class="si">{</span><span class="n">current_card</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Will the next card be higher or lower? (h/l): "</span><span class="p">)</span>
+        <span class="n">next_card</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The next card is: </span><span class="si">{</span><span class="n">next_card</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="p">(</span><span class="n">guess</span> <span class="o">==</span> <span class="s1">'h'</span> <span class="ow">and</span> <span class="n">next_card</span> <span class="o">&gt;</span> <span class="n">current_card</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">guess</span> <span class="o">==</span> <span class="s1">'l'</span> <span class="ow">and</span> <span class="n">next_card</span> <span class="o">&lt;</span> <span class="n">current_card</span><span class="p">):</span>
+            <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Correct! Your score is now </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Incorrect! Your final score is </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+            <span class="k">break</span>
+            
+        <span class="n">current_card</span> <span class="o">=</span> <span class="n">next_card</span>
+
+<span class="n">higher_or_lower</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Welcome to Higher or Lower!
+The current card is: 9
+The next card is: 6
+Sorry, that's incorrect. Your final score is 0.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -794,9 +835,9 @@ Is your number 2?
 <a class="anchor" href="#How-do-Algorithms-relate-to-data-structures?" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do Algorithms relate to data structures?<a class="anchor-link" href="#How-do-Algorithms-relate-to-data-structures?"> </a>
 </h2>
 <ul>
-<li>Algorithms often rely on specific data structures to <strong><strong><strong>__</strong></strong></strong>. </li>
+<li>Algorithms often rely on specific data structures to solve problems efficiently. </li>
 <li>Sorting algorithms require a data structure such as an array or a linked list to store and manipulate data.</li>
-<li>Searching algorithms such as binary search require data structures like <strong><strong>___</strong></strong> to organize and search through data.</li>
+<li>Searching algorithms such as binary search require data structures like arrays or trees to organize and search through data.</li>
 </ul>
 <h2 id="Important-Terms">
 <a class="anchor" href="#Important-Terms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Important Terms<a class="anchor-link" href="#Important-Terms"> </a>
@@ -807,11 +848,11 @@ Is your number 2?
 </ul>
 <p><strong>Sequencing</strong></p>
 <ul>
-<li>means that there is an <strong>_</strong> in which to do things</li>
+<li>means that there is an order in which to do things</li>
 </ul>
 <p><strong>Selection</strong></p>
 <ul>
-<li>Helps to choose  based off of a decision that the programmer wants to make</li>
+<li>Helps to choose two different outcomes based off of a decision that the programmer wants to make</li>
 </ul>
 <p><strong>Iteration</strong></p>
 <ul>
@@ -965,28 +1006,6 @@ Is your number 2?
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[9], line 2</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> a = 0
-<span class="ansi-green-fg">----&gt; 2</span> for i in range(N):
-<span class="ansi-green-intense-fg ansi-bold">      3</span>   for j in reversed(range(i, N)):
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     a = a + i + j
-
-<span class="ansi-red-fg">NameError</span>: name 'N' is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1018,28 +1037,6 @@ Cell <span class="ansi-green-fg">In[9], line 2</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[10], line 2</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> value = 0
-<span class="ansi-green-fg">----&gt; 2</span> for i in range(n): #iterates "n" times, with "i" taking on values from 0 to n-1.
-<span class="ansi-green-intense-fg ansi-bold">      3</span>   for j in range(i): # iterates "i" times, with "j" taking on values from 0 to i-1.
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     value=value+1
-
-<span class="ansi-red-fg">NameError</span>: name 'n' is not defined</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1429,9 +1426,11 @@ The difference between the value and the index is 200.
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="n">random</span><span class="o">.</span><span class="n">randint</span>
+<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="p">)</span>
 
 <span class="c1">#find another random function that could pull a random card from a deck of UNSORTED cards</span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1467,17 +1466,51 @@ The difference between the value and the index is 200.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># (Concert attendance? Wind speeds? Interactions between subjects in large environments?)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="c1"># Think about the sort of things that could be saved in lists, dictionaries, etc.</span>
-<span class="c1"># (Even better if you can take advantage of the specific features of multiple types of data sets!)</span>
-
-<span class="c1"># What kind of iteration happens in the real world?</span>
-<span class="c1"># What occurs repeatedly, even over a long period of time?</span>
-<span class="c1"># You could model the results of a disease spreading through a population without it taking IRL years.</span>
+<span class="k">def</span> <span class="nf">plant_simulation</span><span class="p">():</span>
+    <span class="n">plant_population</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)]</span>
+    <span class="n">years</span> <span class="o">=</span> <span class="mi">10</span>
+    
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">years</span><span class="p">):</span>
+        <span class="n">growth_rate</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">new_plants</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">plant_population</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">growth_rate</span><span class="p">)</span>
+        
+        <span class="n">plant_population</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_plants</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">plant_population</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Year </span><span class="si">{</span><span class="n">year</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">: Population has reached carrying capacity. Stopping simulation."</span><span class="p">)</span>
+            <span class="k">break</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Year </span><span class="si">{</span><span class="n">year</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">new_plants</span><span class="si">}</span><span class="s2"> new plants, total population: </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">plant_population</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        
+<span class="n">plant_simulation</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Year 1: 126 new plants, total population: 222
+Year 2: 96 new plants, total population: 318
+Year 3: 126 new plants, total population: 444
+Year 4: 167 new plants, total population: 611
+Year 5: 93 new plants, total population: 704
+Year 6: 46 new plants, total population: 750
+Year 7: 58 new plants, total population: 808
+Year 8: 51 new plants, total population: 859
+Year 9: 33 new plants, total population: 892
+Year 10: 17 new plants, total population: 909
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1686,9 +1719,9 @@ The difference between the value and the index is 200.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">streak</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_username</span> <span class="o">=</span> <span class="n">username</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_score</span> <span class="o">=</span> <span class="n">streak</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">streak</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_username</span> <span class="o">=</span> <span class="n">username</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_score</span> <span class="o">=</span> <span class="n">streak</span>
 </pre></div>
 
     </div>
@@ -1726,7 +1759,7 @@ The difference between the value and the index is 200.
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@streak</span><span class="o">.</span><span class="n">setter</span>
 <span class="k">def</span> <span class="nf">streak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">streak</span><span class="p">):</span>
-<span class="bp">self</span><span class="o">.</span><span class="n">_streak</span> <span class="o">=</span> <span class="n">streak</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_streak</span> <span class="o">=</span> <span class="n">streak</span>
 </pre></div>
 
     </div>
@@ -1754,7 +1787,7 @@ The difference between the value and the index is 200.
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@property</span>
 <span class="k">def</span> <span class="nf">streak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_streak</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_streak</span>
 </pre></div>
 
     </div>
@@ -1879,6 +1912,22 @@ The difference between the value and the index is 200.
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created user with username "Mr. Cards".
+Created user with username "Kard Kowntre".
+Created user with username "Un Bea Table".
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1922,9 +1971,75 @@ The difference between the value and the index is 200.
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># If you've already run the db.init_app(app) function while in this notebook,</span>
 <span class="c1"># don't do it again until you've closed it!</span>
+
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">create_connection</span><span class="p">():</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'model.db'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">conn</span>
+
+<span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><span class="n">conn</span><span class="p">):</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'''</span>
+<span class="s1">        CREATE TABLE IF NOT EXISTS people (</span>
+<span class="s1">            id INTEGER PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s1">            name TEXT NOT NULL,</span>
+<span class="s1">            age INTEGER NOT NULL,</span>
+<span class="s1">            profession TEXT NOT NULL,</span>
+<span class="s1">            phone TEXT NOT NULL</span>
+<span class="s1">        )</span>
+<span class="s1">    '''</span><span class="p">)</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">create_person</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">profession</span><span class="p">,</span> <span class="n">phone</span><span class="p">):</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'INSERT INTO people (name, age, profession, phone) VALUES (?, ?, ?, ?)'</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">profession</span><span class="p">,</span> <span class="n">phone</span><span class="p">))</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">read_people</span><span class="p">(</span><span class="n">conn</span><span class="p">):</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM people'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">update_person</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">profession</span><span class="p">,</span> <span class="n">phone</span><span class="p">):</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'UPDATE people SET name = ?, age = ?, profession = ?, phone = ? WHERE id = ?'</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">profession</span><span class="p">,</span> <span class="n">phone</span><span class="p">,</span> <span class="nb">id</span><span class="p">))</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">delete_person</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'DELETE FROM people WHERE id = ?'</span><span class="p">,</span> <span class="p">(</span><span class="nb">id</span><span class="p">,))</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="c1"># Print Example</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">create_connection</span><span class="p">()</span>
+<span class="n">create_table</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">create_person</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s1">'Colin'</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="s1">'Pro Gamer'</span><span class="p">,</span> <span class="s1">'123-456-7890'</span><span class="p">)</span>
+<span class="n">create_person</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s1">'Bob'</span><span class="p">,</span> <span class="mi">19999999</span><span class="p">,</span> <span class="s1">'Farmer'</span><span class="p">,</span> <span class="s1">'760-274-3311'</span><span class="p">)</span>
+<span class="n">create_person</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s1">'Orlando'</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="s1">'Pro Coder'</span><span class="p">,</span> <span class="s1">'098-765-4321'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">read_people</span><span class="p">(</span><span class="n">conn</span><span class="p">))</span>
+<span class="n">update_person</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'Bob'</span><span class="p">,</span> <span class="mi">1999999</span><span class="p">,</span> <span class="s1">'Farmer'</span><span class="p">,</span> <span class="s1">'909-090-1234'</span><span class="p">)</span>
+<span class="n">delete_person</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">read_people</span><span class="p">(</span><span class="n">conn</span><span class="p">))</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[(1, 'Colin', 16, 'Pro Gamer', '123-456-7890'), (2, 'Bob', 19999999, 'Farmer', '760-274-3311'), (3, 'Orlando', 16, 'Pro Coder', '098-765-4321')]
+[(1, 'Bob', 1999999, 'Farmer', '909-090-1234'), (3, 'Orlando', 16, 'Pro Coder', '098-765-4321')]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
